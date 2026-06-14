@@ -1,0 +1,9 @@
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\bin\Release\net20\NAppUpdate.Framework.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\bin\Release\net20\NAppUpdate.Framework.pdb
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\Release\net20\NAppUpdate.Framework.csproj.AssemblyReference.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\Release\net20\NAppUpdate.Framework.Resources.resources
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\Release\net20\NAppUpdate.Framework.csproj.GenerateResource.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\Release\net20\NAppUpdate.Framework.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\Release\net20\NAppUpdate.Framework.csproj.CoreCompileInputs.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\Release\net20\NAppUpdate.Framework.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\Release\net20\NAppUpdate.Framework.pdb

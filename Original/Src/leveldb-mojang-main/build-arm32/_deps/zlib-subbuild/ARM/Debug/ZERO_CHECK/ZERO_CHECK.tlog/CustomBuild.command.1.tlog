@@ -1,0 +1,10 @@
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\BADC6F137D59798948C872E9BBAEB819\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild -BC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

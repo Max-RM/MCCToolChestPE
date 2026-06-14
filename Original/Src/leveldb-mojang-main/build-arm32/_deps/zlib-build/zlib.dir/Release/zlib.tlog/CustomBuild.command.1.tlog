@@ -1,0 +1,10 @@
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/mcpe-dll -BC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32 --check-stamp-file C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,21 @@
+namespace Substrate;
+
+public enum WoolColor
+{
+	WHITE,
+	ORANGE,
+	MAGENTA,
+	LIGHT_BLUE,
+	YELLOW,
+	LIGHT_GREEN,
+	PINK,
+	GRAY,
+	LIGHT_GRAY,
+	CYAN,
+	PURPLE,
+	BLUE,
+	BROWN,
+	DARK_GREEN,
+	RED,
+	BLACK
+}

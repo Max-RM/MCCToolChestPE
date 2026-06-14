@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/cmake_install.cmake",
+		"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-build/cmake_install.cmake",
+		"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

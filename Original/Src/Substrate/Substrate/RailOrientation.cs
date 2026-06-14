@@ -1,0 +1,15 @@
+namespace Substrate;
+
+public enum RailOrientation
+{
+	EASTWEST,
+	NORTHSOUTH,
+	ASCEND_SOUTH,
+	ASCEND_NORTH,
+	ASCEND_EAST,
+	ASCEND_WEST,
+	NORTHEAST,
+	SOUTHEAST,
+	SOUTHWEST,
+	NORTHWEST
+}

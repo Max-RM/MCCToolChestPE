@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>NAppUpdate.Framework</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net20</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="NAppUpdate.Framework.updateicon.ico" />
+    <EmbeddedResource Include="NAppUpdate.Framework.updateicon.ico" LogicalName="NAppUpdate.Framework.updateicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+</Project>

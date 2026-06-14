@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>MCCToolChestPE</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="UXXDn3cvaSJiMtEimR.14FmER7TIdULJkLVey" />
+    <None Remove="56VNfxQrwOeY2geE3i.76YChJEysnAtodwYU0" />
+    <EmbeddedResource Include="UXXDn3cvaSJiMtEimR.14FmER7TIdULJkLVey" LogicalName="UXXDn3cvaSJiMtEimR.14FmER7TIdULJkLVey" />
+    <EmbeddedResource Include="56VNfxQrwOeY2geE3i.76YChJEysnAtodwYU0" LogicalName="56VNfxQrwOeY2geE3i.76YChJEysnAtodwYU0" />
+    <None Include="obfuscator_payload.dll" CopyToOutputDirectory="PreserveNewest" Link="obfuscator_payload.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Substrate\Substrate.csproj" />
+    <ProjectReference Include="..\NBTModel\NBTModel.csproj" />
+    <ProjectReference Include="..\FastColoredTextBox\FastColoredTextBox.csproj" />
+    <ProjectReference Include="..\NBTExplorerWrapper\NBTExplorerWrapper.csproj" />
+    <ProjectReference Include="..\NAppUpdate.Framework\NAppUpdate.Framework.csproj" />
+    <ProjectReference Include="..\ClearScript\ClearScript.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)' != 'ARM64' AND '$(Platform)' != 'ARM'">
+    <None Include="..\..\LevelDB-MCPE-32.dll" CopyToOutputDirectory="PreserveNewest" Link="LevelDB-MCPE-32.dll" />
+    <None Include="..\..\LevelDB-MCPE-64.dll" CopyToOutputDirectory="PreserveNewest" Link="LevelDB-MCPE-64.dll" />
+    <None Include="..\LevelDB-MCPE-ARM64.dll" CopyToOutputDirectory="PreserveNewest" Link="LevelDB-MCPE-ARM64.dll" />
+    <None Include="..\LevelDB-MCPE-ARM32.dll" CopyToOutputDirectory="PreserveNewest" Link="LevelDB-MCPE-ARM32.dll" />
+    <None Include="..\zlib-arm32.dll" CopyToOutputDirectory="PreserveNewest" Link="zlib-arm32.dll" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)' == 'ARM64'">
+    <None Include="..\LevelDB-MCPE-ARM64.dll" CopyToOutputDirectory="PreserveNewest" Link="LevelDB-MCPE-64.dll" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)' == 'ARM'">
+    <None Include="..\LevelDB-MCPE-ARM32.dll" CopyToOutputDirectory="PreserveNewest" Link="LevelDB-MCPE-32.dll" />
+    <None Include="..\zlib-arm32.dll" CopyToOutputDirectory="PreserveNewest" Link="zlib.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\MCCToolChestPE.exe.config" CopyToOutputDirectory="PreserveNewest" Link="MCCToolChestPE.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\support\**\*" CopyToOutputDirectory="PreserveNewest" LinkBase="support" />
+  </ItemGroup>
+</Project>

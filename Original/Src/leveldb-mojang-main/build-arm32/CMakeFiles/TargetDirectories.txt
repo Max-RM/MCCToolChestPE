@@ -1,0 +1,13 @@
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/INSTALL.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/ALL_BUILD.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-build/CMakeFiles/zlib.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-build/CMakeFiles/zlibstatic.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-build/CMakeFiles/example.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-build/CMakeFiles/minigzip.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-build/CMakeFiles/INSTALL.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/CMakeFiles/leveldb.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/CMakeFiles/leveldbutil.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/CMakeFiles/INSTALL.dir
+C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/CMakeFiles/ALL_BUILD.dir

@@ -1,0 +1,17 @@
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\bin\ARM64\Release\net40\NBTExplorerWrapper.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\bin\ARM64\Release\net40\NBTExplorerWrapper.pdb
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\bin\ARM64\Release\net40\NBTModel.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\bin\ARM64\Release\net40\Substrate.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\bin\ARM64\Release\net40\NBTModel.pdb
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\bin\ARM64\Release\net40\Substrate.pdb
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorerWrapper.csproj.AssemblyReference.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorer.Windows.About.resources
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorer.Windows.FindReplace.resources
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorer.Windows.MainForm.resources
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorerWrapper.Properties.Resources.resources
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorerWrapper.csproj.GenerateResource.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorerWrapper.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorerWrapper.csproj.CoreCompileInputs.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplo.77CC96DD.Up2Date
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorerWrapper.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTExplorerWrapper\obj\ARM64\Release\net40\NBTExplorerWrapper.pdb

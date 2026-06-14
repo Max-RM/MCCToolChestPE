@@ -1,0 +1,7 @@
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\bin\ARM\Release\net45\ClearScript.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\bin\ARM\Release\net45\ClearScript.pdb
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\obj\ARM\Release\net45\ClearScript.csproj.AssemblyReference.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\obj\ARM\Release\net45\ClearScript.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\obj\ARM\Release\net45\ClearScript.csproj.CoreCompileInputs.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\obj\ARM\Release\net45\ClearScript.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\obj\ARM\Release\net45\ClearScript.pdb

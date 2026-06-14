@@ -1,0 +1,150 @@
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\D9754A11903760348DE9F94ABFD078E1\ZLIB-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/tmp/zlib-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/Debug/zlib-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\D9754A11903760348DE9F94ABFD078E1\ZLIB-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/tmp/zlib-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/Debug/zlib-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\D9754A11903760348DE9F94ABFD078E1\ZLIB-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/tmp/zlib-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\D9754A11903760348DE9F94ABFD078E1\ZLIB-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/Debug/zlib-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\D9754A11903760348DE9F94ABFD078E1\ZLIB-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/Debug/zlib-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\D9754A11903760348DE9F94ABFD078E1\ZLIB-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/Debug/zlib-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\D9754A11903760348DE9F94ABFD078E1\ZLIB-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/Debug/zlib-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\D9754A11903760348DE9F94ABFD078E1\ZLIB-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/Debug/zlib-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\32569782763AFA290C7EBF2FBD386265\ZLIB-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/Debug/zlib-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/Debug/zlib-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKEFILES\BADC6F137D59798948C872E9BBAEB819\ZLIB-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAX\DESKTOP\M\PROJECTS\REMCCTPE\MCCTOOLCHESTPE\SRC\LEVELDB-MOJANG-MAIN\BUILD-ARM32\_DEPS\ZLIB-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild -BC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild --check-stamp-file C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

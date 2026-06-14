@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src\test\example.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6B78FDA5-6214-3C21-B342-DF77078CBA60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

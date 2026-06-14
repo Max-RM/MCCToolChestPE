@@ -1,0 +1,10 @@
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\bin\ARM\Release\net20\NBTModel.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\bin\ARM\Release\net20\NBTModel.pdb
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\bin\ARM\Release\net20\Substrate.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\bin\ARM\Release\net20\Substrate.pdb
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\ARM\Release\net20\NBTModel.csproj.AssemblyReference.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\ARM\Release\net20\NBTModel.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\ARM\Release\net20\NBTModel.csproj.CoreCompileInputs.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\ARM\Release\net20\NBTModel.csproj.Up2Date
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\ARM\Release\net20\NBTModel.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\ARM\Release\net20\NBTModel.pdb

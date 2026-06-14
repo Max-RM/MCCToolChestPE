@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|ARM">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|ARM">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{304F5C86-6CAE-3F2F-8809-D70BA0B2DB76}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsSDKDesktopARMSupport>true</WindowsSDKDesktopARMSupport>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>ARM</Platform>
+    <ProjectName>leveldb</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">leveldb.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">LevelDB-MCPE-ARM32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">leveldb.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">LevelDB-MCPE-ARM32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">leveldb.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">LevelDB-MCPE-ARM32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">leveldb.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">LevelDB-MCPE-ARM32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHs-c- -fvisibility=hidden</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;LEVELDB_SUPPORT_LEGACY_ZLIB_ENUM;LEVELDB_SHARED_LIBRARY;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Debug";leveldb_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;LEVELDB_SUPPORT_LEGACY_ZLIB_ENUM;LEVELDB_SHARED_LIBRARY;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Debug\";leveldb_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\_deps\zlib-build\Debug\zlibd.lib;kernel32.lib;user32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/Debug/LevelDB-MCPE-ARM32.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/Debug/LevelDB-MCPE-ARM32.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHs-c- -fvisibility=hidden</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;LEVELDB_SUPPORT_LEGACY_ZLIB_ENUM;LEVELDB_SHARED_LIBRARY;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Release";leveldb_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;LEVELDB_SUPPORT_LEGACY_ZLIB_ENUM;LEVELDB_SHARED_LIBRARY;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Release\";leveldb_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\_deps\zlib-build\Release\zlib.lib;kernel32.lib;user32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/Release/LevelDB-MCPE-ARM32.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/Release/LevelDB-MCPE-ARM32.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHs-c- -fvisibility=hidden</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;LEVELDB_SUPPORT_LEGACY_ZLIB_ENUM;LEVELDB_SHARED_LIBRARY;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="MinSizeRel";leveldb_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;LEVELDB_SUPPORT_LEGACY_ZLIB_ENUM;LEVELDB_SHARED_LIBRARY;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"MinSizeRel\";leveldb_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\_deps\zlib-build\MinSizeRel\zlib.lib;kernel32.lib;user32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/MinSizeRel/LevelDB-MCPE-ARM32.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/MinSizeRel/LevelDB-MCPE-ARM32.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHs-c- -fvisibility=hidden</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;LEVELDB_SUPPORT_LEGACY_ZLIB_ENUM;LEVELDB_SHARED_LIBRARY;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="RelWithDebInfo";leveldb_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;LEVELDB_SUPPORT_LEGACY_ZLIB_ENUM;LEVELDB_SHARED_LIBRARY;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"RelWithDebInfo\";leveldb_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\.;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\_deps\zlib-build\RelWithDebInfo\zlib.lib;kernel32.lib;user32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/RelWithDebInfo/LevelDB-MCPE-ARM32.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/RelWithDebInfo/LevelDB-MCPE-ARM32.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/mcpe-dll -BC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32 --check-stamp-file C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\port_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/mcpe-dll -BC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32 --check-stamp-file C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\port_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">Building Custom Rule C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/mcpe-dll -BC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32 --check-stamp-file C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\port_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">Building Custom Rule C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/mcpe-dll -BC:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32 --check-stamp-file C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/leveldb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\port_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include\port\port_config.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\builder.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\builder.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\c.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\db_impl.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\db_impl.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\db_iter.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\db_iter.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\dbformat.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\dbformat.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\dumpfile.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\filename.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\filename.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_format.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_reader.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_reader.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_writer.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_writer.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\memtable.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\memtable.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\repair.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\skiplist.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\snapshot.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\table_cache.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\table_cache.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\version_edit.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\version_edit.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\version_set.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\version_set.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\write_batch_internal.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\write_batch.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\port_stdcxx.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\port.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\thread_annotations.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\block_builder.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\block_builder.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\block.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\block.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\filter_block.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\filter_block.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\format.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\format.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\iterator_wrapper.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\iterator.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\merger.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\merger.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\table_builder.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\table.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\two_level_iterator.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\two_level_iterator.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\arena.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\arena.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\bloom.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\cache.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\coding.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\coding.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\comparator.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\crc32c.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\crc32c.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\env.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\filter_policy.cc" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\hash.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\hash.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\logging.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\logging.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\mutexlock.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\no_destructor.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\options.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\random.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\status.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\c.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\cache.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\comparator.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\db.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\decompress_allocator.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\dumpfile.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\env.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\export.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\filter_policy.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\iterator.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\options.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\slice.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\status.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\table_builder.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\table.h" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\write_batch.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\env_windows.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\windows_logger.h" />
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\helpers\memenv\memenv.cc" />
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\helpers\memenv\memenv.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\ZERO_CHECK.vcxproj">
+      <Project>{2DB0A821-E332-3F94-A662-9FEA160BBED3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-build\zlib.vcxproj">
+      <Project>{EEB7240B-5046-3E27-B30C-91DC707DE3EE}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

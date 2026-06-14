@@ -1,0 +1,7 @@
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\bin\ARM64\Release\net45\FastColoredTextBox.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\bin\ARM64\Release\net45\FastColoredTextBox.pdb
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\ARM64\Release\net45\FastColoredTextBox.csproj.AssemblyReference.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\ARM64\Release\net45\FastColoredTextBox.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\ARM64\Release\net45\FastColoredTextBox.csproj.CoreCompileInputs.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\ARM64\Release\net45\FastColoredTextBox.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\ARM64\Release\net45\FastColoredTextBox.pdb

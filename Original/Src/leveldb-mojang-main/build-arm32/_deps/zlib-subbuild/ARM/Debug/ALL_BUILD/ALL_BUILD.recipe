@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-subbuild\ARM\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-subbuild\ARM\Debug\zlib-populate</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\_deps\zlib-subbuild\ARM\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

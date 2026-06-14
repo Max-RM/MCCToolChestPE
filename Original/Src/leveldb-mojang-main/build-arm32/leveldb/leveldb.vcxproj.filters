@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\c.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\db_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\db_iter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\dbformat.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\dumpfile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\filename.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\memtable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\repair.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\table_cache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\version_edit.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\version_set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\write_batch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\block_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\block.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\filter_block.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\iterator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\merger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\table_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\table.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\two_level_iterator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\arena.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\bloom.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\cache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\coding.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\comparator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\crc32c.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\env.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\filter_policy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\hash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\logging.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\options.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\status.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\env_windows.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\helpers\memenv\memenv.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\build-arm32\leveldb\include\port\port_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\db_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\db_iter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\dbformat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\filename.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\log_writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\memtable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\skiplist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\snapshot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\table_cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\version_edit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\version_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\db\write_batch_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\port_stdcxx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\port.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\port\thread_annotations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\block_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\filter_block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\iterator_wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\merger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\table\two_level_iterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\arena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\coding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\crc32c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\mutexlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\no_destructor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\comparator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\db.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\decompress_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\dumpfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\env.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\filter_policy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\iterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\slice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\table_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\include\leveldb\write_batch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\util\windows_logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\helpers\memenv\memenv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\leveldb-mojang-main\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0336C0CE-17AA-37DF-94AF-144AE682A80E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6B78FDA5-6214-3C21-B342-DF77078CBA60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

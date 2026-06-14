@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="linkLabel1.Text" xml:space="preserve"><value>NBTExplorer {ver}
+Copyright ©2011-2014 Justin Aquadro
+
+NBTExplorer is based on NBTEdit by copyboy
+Fugue icon set: p.yusukekamiyamane.com
+
+Email: jaquadro@gmail.com
+NBTExplorer Github Project Page</value></data>
+  <data name="pictureBox1.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAfgkAAAKJUE5HDQoaCgAA
+AA1JSERSAAAAlgAAAJYIBgAAADwBceIAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7BAAAOwQG4
+kWvtAAAAGXRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS44NzuAXQAACPtJREFUeF7t0rENbbkN
+BNCNXIsLcDdOXcgvwv3a+eAEiwGIJ4k3OAmBISiRf/358+fzN/33P//839+h7DYsfkxHJMpuw+LH
+dESi7DYsfkxHJMpuw+LHdESi7DYsfkxHJMpuw+LHdESi7DYsfkxHJMpuw+LHdESi7DYsfkxHJMpu
+w+LHdESi7DYsfkxHJMpuw+LHdESi7DYsfkxHJMpuw+LHdESi7DYsfkxHJMpuw+LHdESi7DYsfkxH
+JMpuw+LHdESi7DYsbqQDSf/+1z/+FvWfpFmTcpNY3EjLSDoiUf9JmjUpN4nFjbSMpCMS9Z+kWZNy
+k1jcSMtIOiJR/0maNSk3icWNtIykIxL1n6RZk3KTWNxIy0g6IlH/SZo1KTeJxY20jKQjEvWfpFmT
+cpNY3EjLSDoiUf9JmjUpN4nFjbSMpCMS9Z+kWZNyk1jcSMtIOiJR/0maNSk3icWNtIykIxL1n6RZ
+k+YU9W+wuJGWkbQIUf9JmjVpTlH/BosbaRlJixD1n6RZk+YU9W+wuJGWkbQIUf9JmjVpTlH/Bosb
+aRlJixD1n6RZk+YU9W+wuJGWkbQIUf9JmjVpTlH/BosbaRlJixD1n6RZk+YU9W+wuJGWkbQIUf9J
+mjVpTlH/BosbaRlJixD1n6RZk+YU9W+wOE0Pb6h3S/1bWlhL/Rt68yQWp+nhDfVuqX9LB9JS/4be
+PInFaXp4Q71b6t/SgbTUv6E3T2Jxmh7eUO+W+rd0IC31b+jNk1icpoc31Lul/i0dSEv9G3rzJBan
+6eEN9W6pf0sH0lL/ht48icVpenhDvVvq39KBtNS/oTdPYnGaHt5Q75b6t3QgLfVv6M2TWJymhzfU
+u6X+LR1IS/0bevMkFk+gT076QFH/hnpP07sb6i16d4PFE+hzkj5G1L+h3tP07oZ6i97dYPEE+pyk
+jxH1b6j3NL27od6idzdYPIE+J+ljRP0b6j1N726ot+jdDRZPoM9J+hhR/4Z6T9O7G+oteneDxRPo
+c5I+RtS/od7T9O6Geove3WDxBPqcpI8R9W+o9zS9u6Heonc3WDyBPifpY0T9G+o9Te9uqLfo3Q0W
+T6DPSfoYUf+Gek/TuxvqLXp3g8UT6HOSPkbUv6He0/TuhnqL3t1g8Rb6QNEHJuWScqJsS+9OyiXl
+JrF4C32gaPlJuaScKNvSu5NySblJLN5CHyhaflIuKSfKtvTupFxSbhKLt9AHipaflEvKibItvTsp
+l5SbxOIt9IGi5SflknKibEvvTsol5SaxeAt9oGj5SbmknCjb0ruTckm5SSzeQh8oWn5SLiknyrb0
+7qRcUm4Si7fQB4qWn5RLyomyLb07KZeUm8TiLfSBouUn5ZJyomxL707KJeUmsfgafXTSgSTlWprz
+JSy+RotNOqSkXEtzvoTF12ixSYeUlGtpzpew+BotNumQknItzfkSFl+jxSYdUlKupTlfwuJrtNik
+Q0rKtTTnS1h8jRabdEhJuZbmfAmLr9Fikw4pKdfSnC9h8TVabNIhJeVamvMlLN5Cy5+kAxHN2lL/
+pNyvsXgLLX+SliqataX+SblfY/EWWv4kLVU0a0v9k3K/xuIttPxJWqpo1pb6J+V+jcVbaPmTtFTR
+rC31T8r9Gou30PInaamiWVvqn5T7NRZvoeVP0lJFs7bUPyn3ayzeQsufpKWKZm2pf1Lu11i8hZY/
+SUsVzdpS/6Tcr7F4Cy1/kpYqmrWl/km5X2NR9NG30DKSci31T8qdQLtvsCga4hZabFKupf5JuRNo
+9w0WRUPcQotNyrXUPyl3Au2+waJoiFtosUm5lvon5U6g3TdYFA1xCy02KddS/6TcCbT7BouiIW6h
+xSblWuqflDuBdt9gUTTELbTYpFxL/ZNyJ9DuGyyKhriFFpuUa6l/Uu4E2n2DRdEQt9Bik3It9U/K
+nUC7b7A4TR89STMkfXJLM7Q0a1KupfckzZBYnKYHTdIMSR/Y0gwtzZqUa+k9STMkFqfpQZM0Q9IH
+tjRDS7Mm5Vp6T9IMicVpetAkzZD0gS3N0NKsSbmW3pM0Q2Jxmh40STMkfWBLM7Q0a1KupfckzZBY
+nKYHTdIMSR/Y0gwtzZqUa+k9STMkFqfpQZM0Q9IHtjRDS7Mm5Vp6T9IMicVpetAkzZD0gS3N0NKs
+SbmW3pM0Q2Jxmh40STMkfWBLM7Q0a1KupfckzZBYnKYHTdIMSR/Y0gwtzZqUa+k9STMkFk+gByXl
+JmkG0cJammOS3pOUSyyeQA9Kyk3SDKIDaWmOSXpPUi6xeAI9KCk3STOIDqSlOSbpPUm5xOIJ9KCk
+3CTNIDqQluaYpPck5RKLJ9CDknKTNIPoQFqaY5Lek5RLLJ5AD0rKTdIMogNpaY5Jek9SLrF4Aj0o
+KTdJM4gOpKU5Juk9SbnE4gn0oKTcJM0gOpCW5pik9yTlEosn0IOScpM0g+hAWppjkt6TlEssnkAP
+Ssq1tNSkGUTZpBlewuIJtLCkXEvLT5pBlE2a4SUsnkALS8q1tPykGUTZpBlewuIJtLCkXEvLT5pB
+lE2a4SUsnkALS8q1tPykGUTZpBlewuIJtLCkXEvLT5pBlE2a4SUsnkALS8q1tPykGUTZpBlewuIJ
+tLCkXEvLT5pBlE2a4SUsnkALS8q1tPykGUTZpBlewuJGOpCWDilphpewuJEOpKVDSprhJSxupANp
+6ZCSZngJixvpQFo6pKQZXsLiRjqQlg4paYaXsLiRDqSlQ0qa4SUsbqQDaemQkmZ4CYsb6UBaOqSk
+GV7C4kY6kJYOKWmGl7C4kQ6kpUNKmuElLG6kA2npkJJmeAmLG+lAWjqkpBlewuJGOpCWDilphpew
+uJEOpKVDSprhJSxupANp6ZCSZngJixvpQFo6pKQZXsLiRjqQlg4paYaXsLiRDqSlQ0qa4SUsbqQD
+aemQkmZ4CYsbaflJRyTKJs3wEhY30vKTjkiUTZrhJSxupOUnHZEomzTDS1jcSMtPOiJRNmmGl7C4
+kZafdESibNIML2FxIy0/6YhE2aQZXsLiRlp+0hGJskkzvITFjbT8pCMSZZNmeAmLG2n5SUckyibN
+8I4/f/0fNs7ZMCrVRe0AAAAASUVORK5CYIIL</value></data></root>

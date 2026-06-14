@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/zlib-populate"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/badc6f137d59798948c872e9bbaeb819/zlib-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/32569782763afa290c7ebf2fbd386265/zlib-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/d9754a11903760348de9f94abfd078e1/zlib-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/d9754a11903760348de9f94abfd078e1/zlib-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/d9754a11903760348de9f94abfd078e1/zlib-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/d9754a11903760348de9f94abfd078e1/zlib-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/d9754a11903760348de9f94abfd078e1/zlib-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/d9754a11903760348de9f94abfd078e1/zlib-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/d9754a11903760348de9f94abfd078e1/zlib-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-subbuild/CMakeFiles/d9754a11903760348de9f94abfd078e1/zlib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"zlib-populate"
+		],
+		"name" : "zlib-populate"
+	}
+}

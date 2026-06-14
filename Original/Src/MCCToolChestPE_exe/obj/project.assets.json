@@ -1,0 +1,256 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5": {
+      "ClearScript/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "compile": {
+          "bin/placeholder/ClearScript.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClearScript.dll": {}
+        }
+      },
+      "FastColoredTextBox/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "compile": {
+          "bin/placeholder/FastColoredTextBox.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FastColoredTextBox.dll": {}
+        }
+      },
+      "NAppUpdate.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v2.0",
+        "compile": {
+          "bin/placeholder/NAppUpdate.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NAppUpdate.Framework.dll": {}
+        }
+      },
+      "NBTExplorerWrapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0",
+        "dependencies": {
+          "NBTModel": "1.0.0",
+          "Substrate": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NBTExplorerWrapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NBTExplorerWrapper.dll": {}
+        }
+      },
+      "NBTModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v2.0",
+        "dependencies": {
+          "Substrate": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NBTModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NBTModel.dll": {}
+        }
+      },
+      "Substrate/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Substrate.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Substrate.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win7-x86": {
+      "ClearScript/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "compile": {
+          "bin/placeholder/ClearScript.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClearScript.dll": {}
+        }
+      },
+      "FastColoredTextBox/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "compile": {
+          "bin/placeholder/FastColoredTextBox.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FastColoredTextBox.dll": {}
+        }
+      },
+      "NAppUpdate.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v2.0",
+        "compile": {
+          "bin/placeholder/NAppUpdate.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NAppUpdate.Framework.dll": {}
+        }
+      },
+      "NBTExplorerWrapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.0",
+        "dependencies": {
+          "NBTModel": "1.0.0",
+          "Substrate": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NBTExplorerWrapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NBTExplorerWrapper.dll": {}
+        }
+      },
+      "NBTModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v2.0",
+        "dependencies": {
+          "Substrate": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NBTModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NBTModel.dll": {}
+        }
+      },
+      "Substrate/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Substrate.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Substrate.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ClearScript/1.0.0": {
+      "type": "project",
+      "path": "../ClearScript/ClearScript.csproj",
+      "msbuildProject": "../ClearScript/ClearScript.csproj"
+    },
+    "FastColoredTextBox/1.0.0": {
+      "type": "project",
+      "path": "../FastColoredTextBox/FastColoredTextBox.csproj",
+      "msbuildProject": "../FastColoredTextBox/FastColoredTextBox.csproj"
+    },
+    "NAppUpdate.Framework/1.0.0": {
+      "type": "project",
+      "path": "../NAppUpdate.Framework/NAppUpdate.Framework.csproj",
+      "msbuildProject": "../NAppUpdate.Framework/NAppUpdate.Framework.csproj"
+    },
+    "NBTExplorerWrapper/1.0.0": {
+      "type": "project",
+      "path": "../NBTExplorerWrapper/NBTExplorerWrapper.csproj",
+      "msbuildProject": "../NBTExplorerWrapper/NBTExplorerWrapper.csproj"
+    },
+    "NBTModel/1.0.0": {
+      "type": "project",
+      "path": "../NBTModel/NBTModel.csproj",
+      "msbuildProject": "../NBTModel/NBTModel.csproj"
+    },
+    "Substrate/1.0.0": {
+      "type": "project",
+      "path": "../Substrate/Substrate.csproj",
+      "msbuildProject": "../Substrate/Substrate.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5": [
+      "ClearScript >= 1.0.0",
+      "FastColoredTextBox >= 1.0.0",
+      "NAppUpdate.Framework >= 1.0.0",
+      "NBTExplorerWrapper >= 1.0.0",
+      "NBTModel >= 1.0.0",
+      "Substrate >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Max\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\MCCToolChestPE_exe\\MCCToolChestPE.csproj",
+      "projectName": "MCCToolChestPE",
+      "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\MCCToolChestPE_exe\\MCCToolChestPE.csproj",
+      "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\MCCToolChestPE_exe\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net45"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "projectReferences": {
+            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\ClearScript\\ClearScript.csproj": {
+              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\ClearScript\\ClearScript.csproj"
+            },
+            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\FastColoredTextBox\\FastColoredTextBox.csproj": {
+              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\FastColoredTextBox\\FastColoredTextBox.csproj"
+            },
+            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\NAppUpdate.Framework\\NAppUpdate.Framework.csproj": {
+              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\NAppUpdate.Framework\\NAppUpdate.Framework.csproj"
+            },
+            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\NBTExplorerWrapper\\NBTExplorerWrapper.csproj": {
+              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\NBTExplorerWrapper\\NBTExplorerWrapper.csproj"
+            },
+            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\NBTModel\\NBTModel.csproj": {
+              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\NBTModel\\NBTModel.csproj"
+            },
+            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\Substrate\\Substrate.csproj": {
+              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\Substrate\\Substrate.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net45": {
+        "targetAlias": "net45",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  }
+}

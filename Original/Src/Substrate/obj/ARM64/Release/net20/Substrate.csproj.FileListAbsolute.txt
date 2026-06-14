@@ -1,0 +1,7 @@
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\Substrate\bin\ARM64\Release\net20\Substrate.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\Substrate\bin\ARM64\Release\net20\Substrate.pdb
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\Substrate\obj\ARM64\Release\net20\Substrate.csproj.AssemblyReference.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\Substrate\obj\ARM64\Release\net20\Substrate.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\Substrate\obj\ARM64\Release\net20\Substrate.csproj.CoreCompileInputs.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\Substrate\obj\ARM64\Release\net20\Substrate.dll
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\Substrate\obj\ARM64\Release\net20\Substrate.pdb

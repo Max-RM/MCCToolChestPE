@@ -1,0 +1,1407 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The target system is: Windows - 10.0 - 
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.9.8+b34f75857 for .NET Framework
+      Build started 6/13/2026 19:48:39.
+      
+      Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\4.0.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:ARM Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\4.0.2\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\arm\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\4.0.2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.42
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/4.0.2/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.9.8+b34f75857 for .NET Framework
+      Build started 6/13/2026 19:48:40.
+      
+      Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\4.0.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:ARM Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\4.0.2\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\arm\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\4.0.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.42
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/4.0.2/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-v58rt4"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-v58rt4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-v58rt4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2f035.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:41.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-v58rt4\\cmTC_2f035.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_2f035.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-v58rt4\\Debug\\".
+          Creating directory "cmTC_2f035.dir\\Debug\\cmTC_2f035.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_2f035.dir\\Debug\\cmTC_2f035.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2f035.dir\\Debug\\cmTC_2f035.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f035.dir\\Debug\\\\" /Fd"cmTC_2f035.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files (x86)\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f035.dir\\Debug\\\\" /Fd"cmTC_2f035.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files (x86)\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-v58rt4\\Debug\\cmTC_2f035.exe" /INCREMENTAL /ILK:"cmTC_2f035.dir\\Debug\\cmTC_2f035.ilk" /NOLOGO kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-v58rt4/Debug/cmTC_2f035.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-v58rt4/Debug/cmTC_2f035.lib" /MACHINE:ARM  /machine:ARM cmTC_2f035.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_2f035.vcxproj -> C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-v58rt4\\Debug\\cmTC_2f035.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_2f035.dir\\Debug\\cmTC_2f035.tlog\\unsuccessfulbuild".
+          Touching "cmTC_2f035.dir\\Debug\\cmTC_2f035.tlog\\cmTC_2f035.lastbuildstate".
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-v58rt4\\cmTC_2f035.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.39
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/arm/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/arm/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.39.33523.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-jpio9h"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-jpio9h"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-jpio9h'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_03b50.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:41.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-jpio9h\\cmTC_03b50.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_03b50.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-jpio9h\\Debug\\".
+          Creating directory "cmTC_03b50.dir\\Debug\\cmTC_03b50.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_03b50.dir\\Debug\\cmTC_03b50.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_03b50.dir\\Debug\\cmTC_03b50.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03b50.dir\\Debug\\\\" /Fd"cmTC_03b50.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files (x86)\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03b50.dir\\Debug\\\\" /Fd"cmTC_03b50.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files (x86)\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-jpio9h\\Debug\\cmTC_03b50.exe" /INCREMENTAL /ILK:"cmTC_03b50.dir\\Debug\\cmTC_03b50.ilk" /NOLOGO kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-jpio9h/Debug/cmTC_03b50.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-jpio9h/Debug/cmTC_03b50.lib" /MACHINE:ARM  /machine:ARM cmTC_03b50.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_03b50.vcxproj -> C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-jpio9h\\Debug\\cmTC_03b50.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_03b50.dir\\Debug\\cmTC_03b50.tlog\\unsuccessfulbuild".
+          Touching "cmTC_03b50.dir\\Debug\\cmTC_03b50.tlog\\cmTC_03b50.lastbuildstate".
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-jpio9h\\cmTC_03b50.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.39
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/arm/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/arm/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.39.33523.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-src/CMakeLists.txt:22 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-76e5gw"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-76e5gw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-76e5gw'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5715c.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:46.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-76e5gw\\cmTC_5715c.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_5715c.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-76e5gw\\Debug\\".
+          Creating directory "cmTC_5715c.dir\\Debug\\cmTC_5715c.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_5715c.dir\\Debug\\cmTC_5715c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5715c.dir\\Debug\\cmTC_5715c.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5715c.dir\\Debug\\\\" /Fd"cmTC_5715c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-76e5gw\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5715c.dir\\Debug\\\\" /Fd"cmTC_5715c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-76e5gw\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-76e5gw\\Debug\\cmTC_5715c.exe" /INCREMENTAL /ILK:"cmTC_5715c.dir\\Debug\\cmTC_5715c.ilk" /NOLOGO kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-76e5gw/Debug/cmTC_5715c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-76e5gw/Debug/cmTC_5715c.lib" /MACHINE:ARM  /machine:ARM cmTC_5715c.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_5715c.vcxproj -> C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-76e5gw\\Debug\\cmTC_5715c.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_5715c.dir\\Debug\\cmTC_5715c.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5715c.dir\\Debug\\cmTC_5715c.tlog\\cmTC_5715c.lastbuildstate".
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-76e5gw\\cmTC_5715c.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.40
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-src/CMakeLists.txt:23 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-sn8hu3"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-sn8hu3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-sn8hu3'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4ed62.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:47.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-sn8hu3\\cmTC_4ed62.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_4ed62.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-sn8hu3\\Debug\\".
+          Creating directory "cmTC_4ed62.dir\\Debug\\cmTC_4ed62.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_4ed62.dir\\Debug\\cmTC_4ed62.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4ed62.dir\\Debug\\cmTC_4ed62.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4ed62.dir\\Debug\\\\" /Fd"cmTC_4ed62.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-sn8hu3\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4ed62.dir\\Debug\\\\" /Fd"cmTC_4ed62.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-sn8hu3\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-sn8hu3\\Debug\\cmTC_4ed62.exe" /INCREMENTAL /ILK:"cmTC_4ed62.dir\\Debug\\cmTC_4ed62.ilk" /NOLOGO kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-sn8hu3/Debug/cmTC_4ed62.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-sn8hu3/Debug/cmTC_4ed62.lib" /MACHINE:ARM  /machine:ARM cmTC_4ed62.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_4ed62.vcxproj -> C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-sn8hu3\\Debug\\cmTC_4ed62.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_4ed62.dir\\Debug\\cmTC_4ed62.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4ed62.dir\\Debug\\cmTC_4ed62.tlog\\cmTC_4ed62.lastbuildstate".
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-sn8hu3\\cmTC_4ed62.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.42
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-src/CMakeLists.txt:24 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-b98vd2"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-b98vd2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-b98vd2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_66be1.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:47.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-b98vd2\\cmTC_66be1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_66be1.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-b98vd2\\Debug\\".
+          Creating directory "cmTC_66be1.dir\\Debug\\cmTC_66be1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_66be1.dir\\Debug\\cmTC_66be1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_66be1.dir\\Debug\\cmTC_66be1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_66be1.dir\\Debug\\\\" /Fd"cmTC_66be1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-b98vd2\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_66be1.dir\\Debug\\\\" /Fd"cmTC_66be1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-b98vd2\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-b98vd2\\Debug\\cmTC_66be1.exe" /INCREMENTAL /ILK:"cmTC_66be1.dir\\Debug\\cmTC_66be1.ilk" /NOLOGO kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-b98vd2/Debug/cmTC_66be1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-b98vd2/Debug/cmTC_66be1.lib" /MACHINE:ARM  /machine:ARM cmTC_66be1.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_66be1.vcxproj -> C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-b98vd2\\Debug\\cmTC_66be1.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_66be1.dir\\Debug\\cmTC_66be1.tlog\\unsuccessfulbuild".
+          Touching "cmTC_66be1.dir\\Debug\\cmTC_66be1.tlog\\cmTC_66be1.lastbuildstate".
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-b98vd2\\cmTC_66be1.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.44
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckTypeSize.cmake:212 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckTypeSize.cmake:339 (__check_type_size_impl)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-src/CMakeLists.txt:42 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-cnh7bq"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-cnh7bq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-cnh7bq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7e583.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:48.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7e583.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\Debug\\".
+          Creating directory "cmTC_7e583.dir\\Debug\\cmTC_7e583.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7e583.dir\\Debug\\cmTC_7e583.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7e583.dir\\Debug\\cmTC_7e583.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7e583.dir\\Debug\\\\" /Fd"cmTC_7e583.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7e583.dir\\Debug\\\\" /Fd"cmTC_7e583.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c"
+          OFF64_T.c
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-cnh7bq\\cmTC_7e583.vcxproj]
+        
+            0 Warning(s)
+            5 Error(s)
+        
+        Time Elapsed 00:00:00.27
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-src/CMakeLists.txt:51 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-n9skv7"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-n9skv7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-n9skv7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7e02e.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:48.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\cmTC_7e02e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7e02e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\Debug\\".
+          Creating directory "cmTC_7e02e.dir\\Debug\\cmTC_7e02e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7e02e.dir\\Debug\\cmTC_7e02e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7e02e.dir\\Debug\\cmTC_7e02e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7e02e.dir\\Debug\\\\" /Fd"cmTC_7e02e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7e02e.dir\\Debug\\\\" /Fd"cmTC_7e02e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\Debug\\cmTC_7e02e.exe" /INCREMENTAL /ILK:"cmTC_7e02e.dir\\Debug\\cmTC_7e02e.ilk" /NOLOGO kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-n9skv7/Debug/cmTC_7e02e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-n9skv7/Debug/cmTC_7e02e.lib" /MACHINE:ARM  /machine:ARM cmTC_7e02e.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\cmTC_7e02e.vcxproj]
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\Debug\\cmTC_7e02e.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\cmTC_7e02e.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\cmTC_7e02e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\cmTC_7e02e.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\cmTC_7e02e.vcxproj]
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\Debug\\cmTC_7e02e.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-n9skv7\\cmTC_7e02e.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.34
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/_deps/zlib-src/CMakeLists.txt:59 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-6h1vm9"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-6h1vm9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-6h1vm9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_34a88.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:49.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\cmTC_34a88.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_34a88.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\Debug\\".
+          Creating directory "cmTC_34a88.dir\\Debug\\cmTC_34a88.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_34a88.dir\\Debug\\cmTC_34a88.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_34a88.dir\\Debug\\cmTC_34a88.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_34a88.dir\\Debug\\\\" /Fd"cmTC_34a88.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_34a88.dir\\Debug\\\\" /Fd"cmTC_34a88.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\CheckIncludeFile.c(1,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\cmTC_34a88.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\cmTC_34a88.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\cmTC_34a88.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\CheckIncludeFile.c(1,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-6h1vm9\\cmTC_34a88.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.28
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:40 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-hwazwj"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-hwazwj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-hwazwj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6853f.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:50.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\cmTC_6853f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_6853f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\Debug\\".
+          Creating directory "cmTC_6853f.dir\\Debug\\cmTC_6853f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_6853f.dir\\Debug\\cmTC_6853f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_6853f.dir\\Debug\\cmTC_6853f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_6853f.dir\\Debug\\\\" /Fd"cmTC_6853f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_6853f.dir\\Debug\\\\" /Fd"cmTC_6853f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\CheckIncludeFile.c(1,1): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\cmTC_6853f.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\cmTC_6853f.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\cmTC_6853f.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\CheckIncludeFile.c(1,1): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-hwazwj\\cmTC_6853f.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.31
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:43 (check_library_exists)"
+    checks:
+      - "Looking for crc32c_value in crc32c"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-u2vdr4"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-u2vdr4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_CRC32C"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-u2vdr4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_231cb.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:50.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-u2vdr4\\cmTC_231cb.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_231cb.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-u2vdr4\\Debug\\".
+          Creating directory "cmTC_231cb.dir\\Debug\\cmTC_231cb.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_231cb.dir\\Debug\\cmTC_231cb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_231cb.dir\\Debug\\cmTC_231cb.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=crc32c_value /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_231cb.dir\\Debug\\\\" /Fd"cmTC_231cb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-u2vdr4\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=crc32c_value /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_231cb.dir\\Debug\\\\" /Fd"cmTC_231cb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-u2vdr4\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-u2vdr4\\Debug\\cmTC_231cb.exe" /INCREMENTAL /ILK:"cmTC_231cb.dir\\Debug\\cmTC_231cb.ilk" /NOLOGO crc32c.lib kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-u2vdr4/Debug/cmTC_231cb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-u2vdr4/Debug/cmTC_231cb.lib" /MACHINE:ARM  /machine:ARM cmTC_231cb.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'crc32c.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-u2vdr4\\cmTC_231cb.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-u2vdr4\\cmTC_231cb.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-u2vdr4\\cmTC_231cb.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'crc32c.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-u2vdr4\\cmTC_231cb.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.35
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:44 (check_library_exists)"
+    checks:
+      - "Looking for snappy_compress in snappy"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-egs78m"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-egs78m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_SNAPPY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-egs78m'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4e958.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:51.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-egs78m\\cmTC_4e958.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_4e958.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-egs78m\\Debug\\".
+          Creating directory "cmTC_4e958.dir\\Debug\\cmTC_4e958.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_4e958.dir\\Debug\\cmTC_4e958.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4e958.dir\\Debug\\cmTC_4e958.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=snappy_compress /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_4e958.dir\\Debug\\\\" /Fd"cmTC_4e958.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-egs78m\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=snappy_compress /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_4e958.dir\\Debug\\\\" /Fd"cmTC_4e958.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-egs78m\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-egs78m\\Debug\\cmTC_4e958.exe" /INCREMENTAL /ILK:"cmTC_4e958.dir\\Debug\\cmTC_4e958.ilk" /NOLOGO snappy.lib kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-egs78m/Debug/cmTC_4e958.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-egs78m/Debug/cmTC_4e958.lib" /MACHINE:ARM  /machine:ARM cmTC_4e958.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'snappy.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-egs78m\\cmTC_4e958.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-egs78m\\cmTC_4e958.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-egs78m\\cmTC_4e958.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'snappy.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-egs78m\\cmTC_4e958.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.32
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:45 (check_library_exists)"
+    checks:
+      - "Looking for zstd_compress in zstd"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-r0ybwx"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-r0ybwx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_ZSTD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-r0ybwx'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bc815.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:51.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybwx\\cmTC_bc815.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_bc815.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybwx\\Debug\\".
+          Creating directory "cmTC_bc815.dir\\Debug\\cmTC_bc815.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_bc815.dir\\Debug\\cmTC_bc815.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_bc815.dir\\Debug\\cmTC_bc815.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=zstd_compress /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_bc815.dir\\Debug\\\\" /Fd"cmTC_bc815.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybwx\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=zstd_compress /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_bc815.dir\\Debug\\\\" /Fd"cmTC_bc815.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybwx\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybwx\\Debug\\cmTC_bc815.exe" /INCREMENTAL /ILK:"cmTC_bc815.dir\\Debug\\cmTC_bc815.ilk" /NOLOGO zstd.lib kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-r0ybwx/Debug/cmTC_bc815.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-r0ybwx/Debug/cmTC_bc815.lib" /MACHINE:ARM  /machine:ARM cmTC_bc815.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'zstd.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybwx\\cmTC_bc815.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybwx\\cmTC_bc815.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybwx\\cmTC_bc815.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'zstd.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-r0ybwx\\cmTC_bc815.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.34
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:47 (check_library_exists)"
+    checks:
+      - "Looking for malloc in tcmalloc"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-zoa7yr"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-zoa7yr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_TCMALLOC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-zoa7yr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fc892.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:52.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-zoa7yr\\cmTC_fc892.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_fc892.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-zoa7yr\\Debug\\".
+          Creating directory "cmTC_fc892.dir\\Debug\\cmTC_fc892.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_fc892.dir\\Debug\\cmTC_fc892.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_fc892.dir\\Debug\\cmTC_fc892.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=malloc /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_fc892.dir\\Debug\\\\" /Fd"cmTC_fc892.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-zoa7yr\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=malloc /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_fc892.dir\\Debug\\\\" /Fd"cmTC_fc892.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-zoa7yr\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-zoa7yr\\Debug\\cmTC_fc892.exe" /INCREMENTAL /ILK:"cmTC_fc892.dir\\Debug\\cmTC_fc892.ilk" /NOLOGO tcmalloc.lib kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-zoa7yr/Debug/cmTC_fc892.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-zoa7yr/Debug/cmTC_fc892.lib" /MACHINE:ARM  /machine:ARM cmTC_fc892.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'tcmalloc.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-zoa7yr\\cmTC_fc892.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-zoa7yr\\cmTC_fc892.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-zoa7yr\\cmTC_fc892.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'tcmalloc.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-zoa7yr\\cmTC_fc892.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.31
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:55 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for fdatasync"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-94y5x2"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-94y5x2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_FDATASYNC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-94y5x2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bd1f9.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:52.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\cmTC_bd1f9.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_bd1f9.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\Debug\\".
+          Creating directory "cmTC_bd1f9.dir\\Debug\\cmTC_bd1f9.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_bd1f9.dir\\Debug\\cmTC_bd1f9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_bd1f9.dir\\Debug\\cmTC_bd1f9.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bd1f9.dir\\Debug\\\\" /Fd"cmTC_bd1f9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\CheckSymbolExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bd1f9.dir\\Debug\\\\" /Fd"cmTC_bd1f9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\CheckSymbolExists.cxx"
+          CheckSymbolExists.cxx
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\CheckSymbolExists.cxx(2,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\cmTC_bd1f9.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\cmTC_bd1f9.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\cmTC_bd1f9.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\CheckSymbolExists.cxx(2,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-94y5x2\\cmTC_bd1f9.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.29
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:56 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for F_FULLFSYNC"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-mbxpd4"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-mbxpd4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_FULLFSYNC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-mbxpd4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_67484.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:53.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\cmTC_67484.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_67484.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\Debug\\".
+          Creating directory "cmTC_67484.dir\\Debug\\cmTC_67484.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_67484.dir\\Debug\\cmTC_67484.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_67484.dir\\Debug\\cmTC_67484.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_67484.dir\\Debug\\\\" /Fd"cmTC_67484.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\CheckSymbolExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_67484.dir\\Debug\\\\" /Fd"cmTC_67484.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\CheckSymbolExists.cxx"
+          CheckSymbolExists.cxx
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\CheckSymbolExists.cxx(8,19): error C2065: 'F_FULLFSYNC': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\cmTC_67484.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\cmTC_67484.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\cmTC_67484.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\CheckSymbolExists.cxx(8,19): error C2065: 'F_FULLFSYNC': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-mbxpd4\\cmTC_67484.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.37
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:57 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for O_CLOEXEC"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-s03xyn"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-s03xyn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_O_CLOEXEC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-s03xyn'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_532aa.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:53.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\cmTC_532aa.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_532aa.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\Debug\\".
+          Creating directory "cmTC_532aa.dir\\Debug\\cmTC_532aa.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_532aa.dir\\Debug\\cmTC_532aa.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_532aa.dir\\Debug\\cmTC_532aa.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_532aa.dir\\Debug\\\\" /Fd"cmTC_532aa.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\CheckSymbolExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_532aa.dir\\Debug\\\\" /Fd"cmTC_532aa.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\CheckSymbolExists.cxx"
+          CheckSymbolExists.cxx
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\CheckSymbolExists.cxx(8,19): error C2065: 'O_CLOEXEC': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\cmTC_532aa.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\cmTC_532aa.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\cmTC_532aa.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\CheckSymbolExists.cxx(8,19): error C2065: 'O_CLOEXEC': undeclared identifier [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-s03xyn\\cmTC_532aa.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.27
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:86 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CLANG_THREAD_SAFETY"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-ellxb0"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-ellxb0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_CLANG_THREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-ellxb0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_73ba3.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:54.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-ellxb0\\cmTC_73ba3.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_73ba3.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-ellxb0\\Debug\\".
+          Creating directory "cmTC_73ba3.dir\\Debug\\cmTC_73ba3.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_73ba3.dir\\Debug\\cmTC_73ba3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_73ba3.dir\\Debug\\cmTC_73ba3.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CLANG_THREAD_SAFETY /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_73ba3.dir\\Debug\\\\" /Fd"cmTC_73ba3.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue  -Wthread-safety "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-ellxb0\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CLANG_THREAD_SAFETY /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_73ba3.dir\\Debug\\\\" /Fd"cmTC_73ba3.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue  -Wthread-safety "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-ellxb0\\src.cxx"
+        cl : command line  error D8021: invalid numeric argument '/Wthread-safety' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-ellxb0\\cmTC_73ba3.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-ellxb0\\cmTC_73ba3.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-ellxb0\\cmTC_73ba3.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          cl : command line  error D8021: invalid numeric argument '/Wthread-safety' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-ellxb0\\cmTC_73ba3.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.27
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:89 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test LEVELDB_HAVE_NO_MISSING_FIELD_INITIALIZERS"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-tfq8xu"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-tfq8xu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "LEVELDB_HAVE_NO_MISSING_FIELD_INITIALIZERS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-tfq8xu'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_56951.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:54.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-tfq8xu\\cmTC_56951.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_56951.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-tfq8xu\\Debug\\".
+          Creating directory "cmTC_56951.dir\\Debug\\cmTC_56951.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_56951.dir\\Debug\\cmTC_56951.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_56951.dir\\Debug\\cmTC_56951.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D LEVELDB_HAVE_NO_MISSING_FIELD_INITIALIZERS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56951.dir\\Debug\\\\" /Fd"cmTC_56951.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue  -Wno-missing-field-initializers "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-tfq8xu\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D LEVELDB_HAVE_NO_MISSING_FIELD_INITIALIZERS /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56951.dir\\Debug\\\\" /Fd"cmTC_56951.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue  -Wno-missing-field-initializers "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-tfq8xu\\src.cxx"
+        cl : command line  error D8021: invalid numeric argument '/Wno-missing-field-initializers' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-tfq8xu\\cmTC_56951.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-tfq8xu\\cmTC_56951.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-tfq8xu\\cmTC_56951.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          cl : command line  error D8021: invalid numeric argument '/Wno-missing-field-initializers' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-tfq8xu\\cmTC_56951.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.23
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:95 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_CXX17_HAS_INCLUDE"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-bubvlr"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-bubvlr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "HAVE_CXX17_HAS_INCLUDE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-bubvlr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ef509.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:55.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bubvlr\\cmTC_ef509.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_ef509.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bubvlr\\Debug\\".
+          Creating directory "cmTC_ef509.dir\\Debug\\cmTC_ef509.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_ef509.dir\\Debug\\cmTC_ef509.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ef509.dir\\Debug\\cmTC_ef509.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CXX17_HAS_INCLUDE /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ef509.dir\\Debug\\\\" /Fd"cmTC_ef509.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bubvlr\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CXX17_HAS_INCLUDE /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ef509.dir\\Debug\\\\" /Fd"cmTC_ef509.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bubvlr\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bubvlr\\Debug\\cmTC_ef509.exe" /INCREMENTAL /ILK:"cmTC_ef509.dir\\Debug\\cmTC_ef509.ilk" /NOLOGO kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-bubvlr/Debug/cmTC_ef509.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-bubvlr/Debug/cmTC_ef509.lib" /MACHINE:ARM  /machine:ARM cmTC_ef509.dir\\Debug\\src.obj
+          cmTC_ef509.vcxproj -> C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bubvlr\\Debug\\cmTC_ef509.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_ef509.dir\\Debug\\cmTC_ef509.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ef509.dir\\Debug\\cmTC_ef509.tlog\\cmTC_ef509.lastbuildstate".
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bubvlr\\cmTC_ef509.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.56
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:301 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-bqnx7v"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-bqnx7v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-bqnx7v'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4ffb8.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:56.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\cmTC_4ffb8.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_4ffb8.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\Debug\\".
+          Creating directory "cmTC_4ffb8.dir\\Debug\\cmTC_4ffb8.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_4ffb8.dir\\Debug\\cmTC_4ffb8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4ffb8.dir\\Debug\\cmTC_4ffb8.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_4ffb8.dir\\Debug\\\\" /Fd"cmTC_4ffb8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_4ffb8.dir\\Debug\\\\" /Fd"cmTC_4ffb8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\src.c"
+          src.c
+        C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\src.c(1,1): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\cmTC_4ffb8.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\cmTC_4ffb8.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\cmTC_4ffb8.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\src.c(1,1): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-bqnx7v\\cmTC_4ffb8.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.27
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:301 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-gk5nys"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-gk5nys"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-gk5nys'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0eaef.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:56.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-gk5nys\\cmTC_0eaef.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_0eaef.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-gk5nys\\Debug\\".
+          Creating directory "cmTC_0eaef.dir\\Debug\\cmTC_0eaef.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_0eaef.dir\\Debug\\cmTC_0eaef.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_0eaef.dir\\Debug\\cmTC_0eaef.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_0eaef.dir\\Debug\\\\" /Fd"cmTC_0eaef.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-gk5nys\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_0eaef.dir\\Debug\\\\" /Fd"cmTC_0eaef.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-gk5nys\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-gk5nys\\Debug\\cmTC_0eaef.exe" /INCREMENTAL /ILK:"cmTC_0eaef.dir\\Debug\\cmTC_0eaef.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-gk5nys/Debug/cmTC_0eaef.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-gk5nys/Debug/cmTC_0eaef.lib" /MACHINE:ARM  /machine:ARM cmTC_0eaef.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-gk5nys\\cmTC_0eaef.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-gk5nys\\cmTC_0eaef.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-gk5nys\\cmTC_0eaef.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-gk5nys\\cmTC_0eaef.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.32
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files (x86)/CMake/share/cmake-4.0/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/CMakeLists.txt:301 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-vkyi9h"
+      binary: "C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-vkyi9h"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-vkyi9h'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_444b7.vcxproj /p:Configuration=Debug /p:Platform=ARM /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 6/13/2026 19:48:57.
+        
+        Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-vkyi9h\\cmTC_444b7.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_444b7.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-vkyi9h\\Debug\\".
+          Creating directory "cmTC_444b7.dir\\Debug\\cmTC_444b7.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_444b7.dir\\Debug\\cmTC_444b7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_444b7.dir\\Debug\\cmTC_444b7.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_444b7.dir\\Debug\\\\" /Fd"cmTC_444b7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-vkyi9h\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for ARM
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_444b7.dir\\Debug\\\\" /Fd"cmTC_444b7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-vkyi9h\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\arm\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-vkyi9h\\Debug\\cmTC_444b7.exe" /INCREMENTAL /ILK:"cmTC_444b7.dir\\Debug\\cmTC_444b7.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-vkyi9h/Debug/cmTC_444b7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Desktop/M/Projects/ReMCCTPE/MCCToolChestPE/Src/leveldb-mojang-main/build-arm32/CMakeFiles/CMakeScratch/TryCompile-vkyi9h/Debug/cmTC_444b7.lib" /MACHINE:ARM  /machine:ARM cmTC_444b7.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-vkyi9h\\cmTC_444b7.vcxproj]
+        Done Building Project "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-vkyi9h\\cmTC_444b7.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-vkyi9h\\cmTC_444b7.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Src\\leveldb-mojang-main\\build-arm32\\CMakeFiles\\CMakeScratch\\TryCompile-vkyi9h\\cmTC_444b7.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.31
+        
+      exitCode: 1
+...
