@@ -1,0 +1,11 @@
+EN
+
+The only condition is that CynodontA (A Cynodont) MUST ALWAYS BE CREDITED as the sole original owner and creator of MCCToolChestPE. This acknowledgment is required as a tribute to a great developer who is no longer with us and who was one of the very few people in the world to create a fully featured NBT editor for Minecraft Bedrock Edition.
+
+In addition, attribution to MaxRM, owner of TNT ENTERTAINMENT Inc organization, is mandatory, as it is through efforts that this source code is available at all. I understand that, over the course of these six years, anyone could theoretically have done the same thing. Nevertheless, the community showed little interest in preserving and advancing NBT editors for Minecraft Bedrock Edition, and as a result, this work was ultimately carried out by me alone. Because of that, I believe it is only fair that this contribution be acknowledged. I consider it unacceptable when people use leaked or recovered source code without even knowing who made it possible for them to modify, maintain, and continue developing the software that they love in the first place.
+
+RU
+
+Единственным условием является указание CynodontA (A Cynodont) как единственного владельца прав на код MCCToolChestPE, это упоминание требуется как дань уважение великому и ныне покинувшему нас автора и одному из немногих в мире человеку создавшему полноценный NBT редактор для Bedrock Edition.
+
+И так-же обязательно требуется указание MaxRM, владельца организации TNT ENTERTAINMENT inc, как того благодаря кому у вас в целом есть этот код. Я понимаю, что за эти долгие 6 лет кто угодно мог бы сделать то же самое, но тем не менее комьюнити было слишком наплевать на NBT редакторы для MCBE и поэтому это было сделано только мною и поэтому вы вынуждены с этим считаться, я считаю недопустимой практику когда люди пользуются слитыми в сеть исходными кодами программ, при этом не зная того благодаря кому они в целом могут менять и обновлять программу так как им хочется.
