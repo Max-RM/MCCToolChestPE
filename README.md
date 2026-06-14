@@ -14,7 +14,7 @@ Nevertheless, some users still prefer a simple and familiar tree-view editor ove
 And now, to the present day (14.06.2026).
 
 I discovered that MCCToolChestPE can be almost completely decompiled back into a functional and compilable source code state using a combination of ILSpy for decompilation (because this is NET C# proggram) and Cursor AI for code refinement, gradually polishing the code until it compiled into a fully working application.
----
+
 The "Original" folder will contain the original reconstructed codebase. It will receive only occasional updates intended to fix existing issues. Please excuse the messy code and even the presence of some already-compiled files inside the repository. In any case, there is no reason for concern, as the repository contains all files and source code required to build the project.
 
 The "Modified" folder will contain a modified version rather than the original one, as many potential improvements have accumulated over the years:
@@ -47,7 +47,6 @@ MCCToolChestPE это один из мощнейших инструментов 
 
 Итак наше время.
 Мною было обнаружено, что MCCToolChestPE можно почти полностью декомпилировать до состояния рабочего и компилируемого исходного кода используя связку ILSpy для декомпиляции и Cursor AI для полировки кода, пока он не стал компилироваться в полностью рабочее приложение.
----
 В папке Original будет опубликован оригинальный код, который будет редко обновляться, только чтобы убрать текущие существующие ошибки. И простите за грязный код и даже отдельные уже скомпилированные файлы внутри (в любом случае бояться не стоит, так как репозиторий в любом случае содержит всё нужные файлы и весь код для компиляции)
 В одной папке Modified будет находится код, который будет уже не оригинальной версией, а модифицированной версией, так как за это время накопилось множество вещей которые можно было бы улучшить.
 1. Основное - поддержка современных миров, которой сейчас нет.
