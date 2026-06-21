@@ -32,10 +32,12 @@ public class InventoryItemInfo : Form
 		{
 			_ = ((object[])null)[0];
 		}
-		int num = p3kPxqqRR4(info);
-		base.Width = num;
-		base.Height = doVPUFYePN.Height + 1;
-		doVPUFYePN.Text = info;
+		string text = string.IsNullOrWhiteSpace(info) ? Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(10714) : info;
+		doVPUFYePN.Text = text;
+		doVPUFYePN.AutoSize = true;
+		Size textSize = TextRenderer.MeasureText(text, doVPUFYePN.Font, new Size(int.MaxValue, int.MaxValue), TextFormatFlags.NoPadding);
+		int padding = 8;
+		ClientSize = new Size(Math.Max(textSize.Width + padding, 48), Math.Max(doVPUFYePN.Height + padding, 22));
 	}
 
 	[MethodImpl(MethodImplOptions.NoInlining)]
@@ -77,6 +79,7 @@ public class InventoryItemInfo : Form
 		doVPUFYePN = new Label();
 		SuspendLayout();
 		doVPUFYePN.AutoSize = true;
+		doVPUFYePN.BackColor = Color.White;
 		doVPUFYePN.BorderStyle = BorderStyle.FixedSingle;
 		doVPUFYePN.Font = new Font(Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(10438), 10f, FontStyle.Regular, GraphicsUnit.Point, 0);
 		doVPUFYePN.Location = new Point(0, 0);
@@ -95,6 +98,7 @@ public class InventoryItemInfo : Form
 		base.ShowInTaskbar = false;
 		base.SizeGripStyle = SizeGripStyle.Hide;
 		base.StartPosition = FormStartPosition.Manual;
+		base.TopMost = true;
 		Text = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(34572);
 		ResumeLayout(performLayout: false);
 		PerformLayout();

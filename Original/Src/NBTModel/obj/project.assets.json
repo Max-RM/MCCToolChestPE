@@ -24,6 +24,30 @@
           "bin/placeholder/Substrate.dll": {}
         }
       }
+    },
+    ".NETFramework,Version=v2.0/win7-x64": {
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net20": "1.0.3"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net20/1.0.3": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETFramework.ReferenceAssemblies.net20.targets": {}
+        }
+      },
+      "Substrate/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Substrate.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Substrate.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -171,6 +195,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x64": {
+        "#import": []
       }
     }
   }

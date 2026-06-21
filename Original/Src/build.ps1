@@ -1,4 +1,4 @@
-# Build MCCToolChestPE from source (requires Visual Studio 2022 MSBuild)
+# Build MCCToolChestPE from source (Any CPU IL, runs as 64-bit on x64 Windows)
 $msbuild = "${env:ProgramFiles}\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe"
 if (-not (Test-Path $msbuild)) {
     $msbuild = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe"

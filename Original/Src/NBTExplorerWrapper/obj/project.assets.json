@@ -25,6 +25,31 @@
           "bin/placeholder/Substrate.dll": {}
         }
       }
+    },
+    ".NETFramework,Version=v4.0/win7-x64": {
+      "NBTModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v2.0",
+        "dependencies": {
+          "Substrate": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NBTModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NBTModel.dll": {}
+        }
+      },
+      "Substrate/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Substrate.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Substrate.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -96,6 +121,11 @@
       "net40": {
         "targetAlias": "net40",
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x64": {
+        "#import": []
       }
     }
   }
