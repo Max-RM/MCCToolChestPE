@@ -1,0 +1,6 @@
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NBTExplorerWrapper\obj\Release\net40\NBTExplorerWrapper.csproj.AssemblyReference.cache
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NBTExplorerWrapper\obj\Release\net40\NBTExplorer.Windows.About.resources
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NBTExplorerWrapper\obj\Release\net40\NBTExplorer.Windows.FindReplace.resources
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NBTExplorerWrapper\obj\Release\net40\NBTExplorer.Windows.MainForm.resources
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NBTExplorerWrapper\obj\Release\net40\NBTExplorerWrapper.Properties.Resources.resources
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NBTExplorerWrapper\obj\Release\net40\NBTExplorerWrapper.csproj.GenerateResource.cache

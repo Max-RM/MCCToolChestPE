@@ -1,0 +1,3 @@
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\Debug\net20\FastColoredTextBox.csproj.AssemblyReference.cache
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\Debug\net20\FastColoredTextBox.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\Debug\net20\FastColoredTextBox.csproj.CoreCompileInputs.cache

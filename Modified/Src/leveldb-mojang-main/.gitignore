@@ -1,0 +1,17 @@
+# Editors.
+*.sw*
+.vscode
+.DS_Store
+
+# Build directory.
+build/
+build-*/
+out/
+
+# CMake FetchContent / configure output (do not commit).
+_deps/
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+!cmake/
+!mcpe-dll/CMakeLists.txt

@@ -1,0 +1,306 @@
+256, 0, Iron Shovel
+257, 0, Iron Pickaxe
+258, 0, Iron Axe
+259, 0, Flint and Steel
+260, 0, Apple
+261, 0, Bow
+262, 0, Arrow
+263, 0, Coal
+263, 1, Charcoal
+264, 0, Diamond
+265, 0, Iron Ingot
+266, 0, Gold Ingot
+267, 0, Iron Sword
+268, 0, Wooden Sword
+269, 0, Wooden Shovel
+270, 0, Wooden Pickaxe
+271, 0, Wooden Axe
+272, 0, Stone Sword
+273, 0, Stone Shovel
+274, 0, Stone Pickaxe
+275, 0, Stone Axe
+276, 0, Diamond Sword
+277, 0, Diamond Shovel
+278, 0, Diamond Pickaxe
+279, 0, Diamond Axe
+280, 0, Stick
+281, 0, Bowl
+282, 0, Mushroom Stew
+283, 0, Golden Sword
+284, 0, Golden Shovel
+285, 0, Golden Pickaxe
+286, 0, Golden Axe
+287, 0, String
+288, 0, Feather
+289, 0, Gunpowder
+290, 0, Wooden Hoe
+291, 0, Stone Hoe
+292, 0, Iron Hoe
+293, 0, Diamond Hoe
+294, 0, Golden Hoe
+295, 0, Seeds
+296, 0, Wheat
+297, 0, Bread
+298, 0, Leather Cap
+299, 0, Leather Tunic
+300, 0, Leather Pants
+301, 0, Leather Boots
+302, 0, Chain Helmet
+303, 0, Chain Chestplate
+304, 0, Chain Leggings
+305, 0, Chain Boots
+306, 0, Iron Helmet
+307, 0, Iron Chestplate
+308, 0, Iron Leggings
+309, 0, Iron Boots
+310, 0, Diamond Helmet
+311, 0, Diamond Chestplate
+312, 0, Diamond Leggings
+313, 0, Diamond Boots
+314, 0, Golden Helmet
+315, 0, Golden Chestplate
+316, 0, Golden Leggings
+317, 0, Golden Boots
+318, 0, Flint
+319, 0, Raw Porkchop
+320, 0, Cooked Porkchop
+321, 0, Painting
+322, 0, Golden Apple
+323, 0, Sign
+324, 0, Wooden Door
+325, 0, Bucket
+328, 0, Minecart
+329, 0, Saddle
+330, 0, Iron Door
+331, 0, Redstone
+332, 0, Snowball
+333, 0, Oak Boat
+333, 1, Spruce Boat
+333, 2, Birch Boat
+333, 3, Jungle Boat
+333, 4, Acacia Boat
+333, 5, Dark Oak Boat
+334, 0, Leather
+335, 0, Kelp
+336, 0, Brick
+337, 0, Clay
+338, 0, Sugar Cane
+339, 0, Paper
+340, 0, Book
+341, 0, Slimeball
+342, 0, Minecart with Chest
+344, 0, Egg
+345, 0, Compass
+346, 0, Fishing Rod
+347, 0, Clock
+348, 0, Glowstone Dust
+349, 0, Raw Fish
+350, 0, Cooked Fish
+351, 0, Dye
+351, 1, Rose Red
+351, 2, Cactus Green
+351, 3, Cocoa Beans
+351, 4, Lapis Lazuli
+351, 5, Purple Dye
+351, 6, Cyan Dye
+351, 7, Light Gray Dye
+351, 8, Gray Dye
+351, 9, Pink Dye
+351, 10, Lime Dye
+351, 11, Dandelion Yellow
+351, 12, Light Blue Dye
+351, 13, Magenta Dye
+351, 14, Orange Dye
+351, 15, Bone Meal
+352, 0, Bone
+353, 0, Sugar
+354, 0, Cake
+355, 0, Bed
+356, 0, Redstone Repeater
+357, 0, Cookie
+358, 0, Filled Map
+359, 0, Shears
+360, 0, Melon
+361, 0, Pumpkin Seeds
+362, 0, Melon Seeds
+363, 0, Raw Beef
+364, 0, Steak
+365, 0, Raw Chicken
+366, 0, Cooked Chicken
+367, 0, Rotten Flesh
+368, 0, Ender Pearl
+369, 0, Blaze Rod
+370, 0, Ghast Tear
+371, 0, Gold Nugget
+372, 0, Nether Wart
+373, 0, Potion
+374, 0, Glass Bottle
+375, 0, Spider Eye
+376, 0, Fermented Spider Eye
+377, 0, Blaze Powder
+378, 0, Magma Cream
+379, 0, Brewing Stand
+380, 0, Cauldron
+381, 0, Eye of Ender
+382, 0, Glistering Melon
+383, 0, Spawn Egg
+383, 50, Spawn Creeper
+383, 51, Spawn Skeleton
+383, 52, Spawn Spider
+383, 54, Spawn Zombie
+383, 55, Spawn Slime
+383, 41, Spawn Ghast
+383, 57, Spawn Zombie Pigman
+383, 58, Spawn Enderman
+383, 59, Spawn Cave Spider
+383, 60, Spawn Silverfish
+383, 61, Spawn Blaze
+383, 62, Spawn Magma Cube
+383, 65, Spawn Bat
+383, 66, Spawn Witch
+383, 67, Spawn Endermite
+383, 68, Spawn Guardian
+383, 90, Spawn Pig
+383, 91, Spawn Sheep
+383, 92, Spawn Cow
+383, 93, Spawn Chicken
+383, 94, Spawn Squid
+383, 95, Spawn Wolf
+383, 96, Spawn Mooshroom
+383, 98, Spawn Ocelot
+383, 100, Spawn Horse
+383, 101, Spawn Rabbit
+383, 120, Spawn Villager
+384, 0, Bottle o' Enchanting
+385, 0, Fire Charge
+386, 0, Book and Quill
+387, 0, Written Book
+388, 0, Emerald
+389, 0, Item Frame
+390, 0, Flower Pot
+391, 0, Carrot
+392, 0, Potato
+393, 0, Baked Potato
+394, 0, Poisonous Potato
+395, 0, Empty Map
+396, 0, Golden Carrot
+397, 0, Skeleton Skull
+397, 1, Withher Skeleton Skull
+397, 2, Zombie head
+397, 3, Steve head
+397, 4, Creeper head
+397, 5, Dragon head
+398, 0, Carrot on a Stick
+399, 0, Nether Star
+400, 0, Pumpkin Pie
+401, 0, Firework Rocket
+402, 0, Firework Star
+403, 0, Enchanted Book
+404, 0, Redstone Comparator
+405, 0, Nether Brick
+406, 0, Nether Quartz
+407, 0, Minecart with TNT
+408, 0, Minecart with Hopper
+409, 0, Prismarine Shard
+410, 0, Hopper
+411, 0, Raw Rabbit
+412, 0, Cooked Rabbit
+413, 0, Rabbit Stew
+414, 0, Rabbit's Foot
+415, 0, Rabbit Hide
+416, 0, Leather Horse Armor
+417, 0, Iron Horse Armor
+418, 0, Golden Horse Armor
+419, 0, Diamond Horse Armor
+420, 0, Lead
+421, 0, Name Tag
+422, 0, Prismarine Crystals
+423, 0, Raw Mutton
+424, 0, Cooked Mutton
+425, 0, Armor Stand
+426, 0, End Crystal
+427, 0, Spruce Door
+428, 0, Birch Door
+429, 0, Jungle Door
+430, 0, Acacia Door
+431, 0, Dark Oak Door
+432, 0, Chorus Fruit
+433, 0, Popped Chorus Fruit
+437, 0, Dragon's Breath
+438, 0, Splash Potion
+441, 0, Lingering Potion
+442, 0, Orange Sparkler
+443, 0, Minecart with Command Block
+444, 0, Elytra
+445, 0, Shulker Shell
+446, 0, White Banner
+446, 1, Orange Banner
+446, 2, Magenta Banner
+446, 3, Light Blue Banner
+446, 4, Yellow Banner
+446, 5, Lime Banner
+446, 6, Pink Banner
+446, 7, Gray Banner
+446, 8, Light Gray Banner
+446, 9, Cyan Banner
+446, 10, Purple Banner
+446, 11, Blue Banner
+446, 12, Brown Banner
+446, 13, Green Banner
+446, 14, Red Banner
+446, 15, black Banner
+447, 0, Eye Drops
+448, 0, White Balloon
+448, 1, Orange Balloon
+448, 2, Magenta Balloon
+448, 3, Light Blue Balloon
+448, 4, Yellow Balloon
+448, 5, Lime Balloon
+448, 6, Pink Balloon
+448, 7, Grey Balloon
+448, 8, Light Grey Balloon
+448, 9, Cyan Balloon
+448, 10, Purple Balloon
+448, 11, Blue Balloon
+448, 12, Brown Balloon
+448, 13, Green Balloon
+448, 14, Red Balloon
+448, 15, Black Balloon
+449, 0, Super Fertilizer
+450, 0, Totem of Undying
+451, 0, Bleach
+452, 0, Iron Nugget
+453, 0, Ice Bomb
+454, 0, Chalkboard Small
+454, 1, Chalkboard Medium
+454, 2, Chalkboard Large
+455, 0, Trident
+456, 0, Portfolio
+457, 0, Beetroot
+458, 0, Beetroot Seeds
+459, 0, Beetroot Soup
+460, 0, Raw Salmon
+461, 0, Clownfish
+462, 0, Pufferfish
+463, 0, Cooked Salmon
+464, 0, Dried Kelp
+465, 0, Nautilus Shell
+466, 0, Enchanted Golden Apple
+467, 0, Heart of the Sea
+468, 0, Scute
+469, 0, Turtle Shell
+470, 0, Phantom Membrane
+498, 0, Camera
+499, 0, Salt
+500, 0, 13 Disc
+501, 0, Cat Disc
+502, 0, Blocks Disc
+503, 0, Chirp Disc
+504, 0, Far Disc
+505, 0, Mall Disc
+506, 0, Mellohi Disc
+507, 0, Stal Disc
+508, 0, Strad Disc
+509, 0, Ward Disc
+510, 0, 11 Disc
+511, 0, Wait Disc

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1iaZAFtJoz5w4YuPVEZJ5h5R/YbKqiNw4LRDVoTPmhuLOJ/nPwaNRqBxLv2c3CMKWmnF2h18+ARM2KwprVcPJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\NBTModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Max\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Max\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net20\\1.0.3\\microsoft.netframework.referenceassemblies.net20.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zHQxJXlMv8wpI1+yoobvz8ZnXbuZkfldzQMLASdJ/+MMsMLlSMSdU6KOrS4mEmt9c7GJjiUg4IrXQMwrgedwQw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\Substrate\\Substrate.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Max\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Max\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net20\\1.0.3\\microsoft.netframework.referenceassemblies.net20.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
