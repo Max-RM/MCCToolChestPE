@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\ClearScript.csproj",
+      "projectUniqueName": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\ClearScript.csproj",
       "projectName": "ClearScript",
-      "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\ClearScript.csproj",
+      "projectPath": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\ClearScript.csproj",
       "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\obj\\",
+      "outputPath": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",

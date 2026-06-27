@@ -42,7 +42,7 @@ $sln = Join-Path $root "Src\MCCToolChestPE.sln"
 & $msbuild $sln /t:Rebuild /p:Configuration=Release /p:Platform=ARM /v:minimal
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-$outDir = Join-Path $exeProject "bin\ARM\Release\net45"
+$outDir = Join-Path $exeProject "bin\ARM\Release\net472"
 $managedDlls = @(
     "NBTExplorerWrapper.dll",
     "Substrate.dll",

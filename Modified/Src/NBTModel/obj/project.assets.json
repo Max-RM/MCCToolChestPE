@@ -145,11 +145,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\NBTModel.csproj",
+      "projectUniqueName": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\NBTModel.csproj",
       "projectName": "NBTModel",
-      "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\NBTModel.csproj",
+      "projectPath": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\NBTModel.csproj",
       "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\obj\\",
+      "outputPath": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",

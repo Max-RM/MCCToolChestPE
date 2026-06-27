@@ -41,3 +41,10 @@ C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChes
 C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\obj\ARM64\Release\net472\MCCToolC.20CFC3E9.Up2Date
 C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\obj\ARM64\Release\net472\MCCToolChestPE.exe
 C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\obj\ARM64\Release\net472\MCCToolChestPE.pdb
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\bin\ARM64\Release\net472\support\icons\tree_portals.png
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\bin\ARM64\Release\net472\support\icons\tree_structures.png
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\bin\ARM64\Release\net472\support\icons\tree_structure_manager.png
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\bin\ARM64\Release\net472\support\icons\tree_tickingareas.png
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\bin\ARM64\Release\net472\support\icons\tree_tickingarea_manager.png
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\bin\ARM64\Release\net472\support\icons\tree_custom_dimension.png
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\MCCToolChestPE_exe\bin\ARM64\Release\net472\support\icons\tree_maps.png

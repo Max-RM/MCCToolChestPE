@@ -6,6 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 using MCCToolChest.MCSBCode;
 using MCCToolChest.model;
+using MCPELevelDBI.workers;
 using Substrate.Nbt;
 
 namespace MCCToolChest.utils;
@@ -164,7 +165,20 @@ public static class PeLdbDataHelper
 
 	public static bool ExportEntry(PeManagedDataEntry entry, PeManagedDataKind kind, string targetFilePath)
 	{
-		if (entry == null || string.IsNullOrWhiteSpace(entry.StagingFilePath) || !File.Exists(entry.StagingFilePath))
+		if (entry == null || string.IsNullOrWhiteSpace(entry.LdbKey))
+		{
+			return false;
+		}
+		Working.FlushStagingEntriesForExport?.Invoke(new string[1] { entry.LdbKey });
+		if (string.IsNullOrWhiteSpace(entry.StagingFilePath) || !File.Exists(entry.StagingFilePath))
+		{
+			PeManagedDataEntry refreshed = TryGetEntry(Working.T92StMGt1p4(), kind, entry.LdbKey);
+			if (refreshed != null)
+			{
+				entry = refreshed;
+			}
+		}
+		if (string.IsNullOrWhiteSpace(entry.StagingFilePath) || !File.Exists(entry.StagingFilePath))
 		{
 			MessageBox.Show("Selected entry file was not found in the staging folder.", "Export", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			return false;
@@ -254,18 +268,18 @@ public static class PeLdbDataHelper
 		return list3;
 	}
 
-	public static List<string> AddEmptyEntry(string worldStagingPath, PeManagedDataKind kind, bool circleTickingarea, TreeView treeView, string structureNamespacePrefix = DefaultStructureNamespace, string structureName = "new_structure")
+	public static List<string> AddEmptyEntry(string worldStagingPath, PeManagedDataKind kind, bool circleTickingarea, TreeView treeView, string structureNamespacePrefix = DefaultStructureNamespace, string structureName = "new_structure", string ldbKeyOverride = null)
 	{
 		byte[] bytes = (kind == PeManagedDataKind.Structure) ? BuildEmptyStructureBytes() : BuildEmptyTickingareaBytes(circleTickingarea);
-		string text = ((kind == PeManagedDataKind.Structure) ? (PeTreeTags.StructureTemplatePrefix + structureNamespacePrefix + ":" + structureName) : (PeTreeTags.TickingareaPrefix + Guid.NewGuid()));
+		string text = ResolveNewEntryKey(kind, circleTickingarea, structureNamespacePrefix, structureName, ldbKeyOverride, worldStagingPath, treeView);
 		Directory.CreateDirectory(PeStagingPaths.GetDataFolderPath(worldStagingPath));
 		string text2 = FileUtils.EncodeLdbKeyFileName(text) + PeStagingPaths.DataFileExtension;
 		string text3 = PeStagingPaths.BuildDataAbsolutePath(worldStagingPath, text2);
 		int num = 0;
-		while (File.Exists(text3))
+		while (File.Exists(text3) || KeyExistsInTree(treeView, text))
 		{
 			num++;
-			text = ((kind == PeManagedDataKind.Structure) ? (PeTreeTags.StructureTemplatePrefix + structureNamespacePrefix + ":" + structureName + "_" + num) : (PeTreeTags.TickingareaPrefix + Guid.NewGuid()));
+			text = ((kind == PeManagedDataKind.Structure) ? ResolveStructureManualKey(PeTreeTags.StructureTemplatePrefix + structureNamespacePrefix + ":new_structure" + ((num == 1) ? "_1" : ("_" + num)), structureNamespacePrefix, worldStagingPath, treeView) : ResolveTickingareaManualKey(PeTreeTags.TickingareaPrefix + "new_tickingarea" + ((num == 1) ? "" : ("_" + num)), worldStagingPath, treeView));
 			text2 = FileUtils.EncodeLdbKeyFileName(text) + PeStagingPaths.DataFileExtension;
 			text3 = PeStagingPaths.BuildDataAbsolutePath(worldStagingPath, text2);
 		}
@@ -331,6 +345,194 @@ public static class PeLdbDataHelper
 			DisplayName = BuildDisplayName(indexEntry.FileName, kind, stagingFilePath),
 			StagingFilePath = stagingFilePath
 		};
+	}
+
+	public static bool DeleteEntry(string worldStagingPath, string ldbKey, TreeView treeView)
+	{
+		if (string.IsNullOrWhiteSpace(worldStagingPath) || string.IsNullOrWhiteSpace(ldbKey))
+		{
+			return false;
+		}
+		RemoveTreeEntriesByKey(treeView, ldbKey);
+		string fileNameOnDisk = FileUtils.EncodeLdbKeyFileName(ldbKey) + PeStagingPaths.DataFileExtension;
+		string absolutePath = PeStagingPaths.BuildDataAbsolutePath(worldStagingPath, fileNameOnDisk);
+		if (File.Exists(absolutePath))
+		{
+			File.Delete(absolutePath);
+		}
+		try
+		{
+			PEProcessWorker.DeleteRecord(ldbKey, worldStagingPath);
+		}
+		catch (Exception)
+		{
+		}
+		Working.DataChanged = true;
+		return true;
+	}
+
+	public static bool RenameEntry(string worldStagingPath, string oldKey, string newKey, TreeView treeView, PeManagedDataKind kind)
+	{
+		if (string.IsNullOrWhiteSpace(worldStagingPath) || string.IsNullOrWhiteSpace(oldKey) || string.IsNullOrWhiteSpace(newKey))
+		{
+			return false;
+		}
+		oldKey = oldKey.Trim();
+		newKey = newKey.Trim();
+		if (string.Equals(oldKey, newKey, StringComparison.Ordinal))
+		{
+			return true;
+		}
+		string oldFileNameOnDisk = FileUtils.EncodeLdbKeyFileName(oldKey) + PeStagingPaths.DataFileExtension;
+		string newFileNameOnDisk = FileUtils.EncodeLdbKeyFileName(newKey) + PeStagingPaths.DataFileExtension;
+		string oldAbsolutePath = PeStagingPaths.BuildDataAbsolutePath(worldStagingPath, oldFileNameOnDisk);
+		string newAbsolutePath = PeStagingPaths.BuildDataAbsolutePath(worldStagingPath, newFileNameOnDisk);
+		if (!File.Exists(oldAbsolutePath) || File.Exists(newAbsolutePath) || KeyExistsInTree(treeView, newKey))
+		{
+			return false;
+		}
+		List<TreeNode> list = new List<TreeNode>();
+		FindTreeNodesByKey(treeView?.Nodes, oldKey, list);
+		HashSet<string> parentNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+		foreach (TreeNode item in list)
+		{
+			if (item.Tag is IndexEntry indexEntry)
+			{
+				parentNames.Add(indexEntry.ParentName);
+			}
+		}
+		foreach (TreeNode item2 in list)
+		{
+			item2.Remove();
+		}
+		File.Move(oldAbsolutePath, newAbsolutePath);
+		string newRelativePath = PeStagingPaths.BuildDataRelativePath(newFileNameOnDisk);
+		string displayName = BuildDisplayName(newKey, kind, newAbsolutePath);
+		PEFileTree pEFileTree = new PEFileTree();
+		foreach (string parentName in parentNames)
+		{
+			if (string.IsNullOrWhiteSpace(parentName))
+			{
+				continue;
+			}
+			IndexEntry indexEntry2 = new IndexEntry
+			{
+				FileName = newKey,
+				FilePath = newRelativePath,
+				ParentName = parentName
+			};
+			pEFileTree.DisplayFileItem(indexEntry2, worldStagingPath, treeView, displayName);
+		}
+		try
+		{
+			PEProcessWorker.DeleteRecord(oldKey, worldStagingPath);
+		}
+		catch (Exception)
+		{
+		}
+		Working.DataChanged = true;
+		return true;
+	}
+
+	private static string ResolveNewEntryKey(PeManagedDataKind kind, bool circleTickingarea, string structureNamespacePrefix, string structureName, string ldbKeyOverride, string worldStagingPath, TreeView treeView)
+	{
+		if (kind == PeManagedDataKind.Structure)
+		{
+			if (ldbKeyOverride != null)
+			{
+				return ResolveStructureManualKey(ldbKeyOverride, structureNamespacePrefix, worldStagingPath, treeView);
+			}
+			return PeTreeTags.StructureTemplatePrefix + structureNamespacePrefix + ":" + structureName;
+		}
+		if (ldbKeyOverride == null)
+		{
+			return PeTreeTags.TickingareaPrefix + Guid.NewGuid().ToString("N");
+		}
+		return ResolveTickingareaManualKey(ldbKeyOverride, worldStagingPath, treeView);
+	}
+
+	private static string ResolveStructureManualKey(string ldbKeyOverride, string structureNamespacePrefix, string worldStagingPath, TreeView treeView)
+	{
+		string text = PeTreeTags.StructureTemplatePrefix + structureNamespacePrefix + ":";
+		string text2 = (ldbKeyOverride ?? text).Trim();
+		if (!text2.StartsWith(PeTreeTags.StructureTemplatePrefix, StringComparison.OrdinalIgnoreCase))
+		{
+			text2 = text + text2;
+		}
+		int num = text2.IndexOf(':');
+		if (num < 0)
+		{
+			text2 = text;
+		}
+		string namePart = (num >= 0 && num < text2.Length - 1) ? text2.Substring(num + 1) : "";
+		if (string.IsNullOrEmpty(namePart))
+		{
+			if (!KeyExists(worldStagingPath, text2, treeView))
+			{
+				return text2;
+			}
+			int num2 = 0;
+			while (true)
+			{
+				string candidate = text + "new_structure" + ((num2 == 0) ? "" : ("_" + num2));
+				if (!KeyExists(worldStagingPath, candidate, treeView))
+				{
+					return candidate;
+				}
+				num2++;
+			}
+		}
+		return text2;
+	}
+
+	private static string ResolveTickingareaManualKey(string ldbKeyOverride, string worldStagingPath, TreeView treeView)
+	{
+		string prefix = PeTreeTags.TickingareaPrefix;
+		string text = (ldbKeyOverride ?? prefix).Trim();
+		if (!text.StartsWith(prefix, StringComparison.OrdinalIgnoreCase))
+		{
+			text = prefix + text;
+		}
+		string namePart = text.Substring(prefix.Length);
+		if (string.IsNullOrEmpty(namePart))
+		{
+			if (!KeyExists(worldStagingPath, prefix, treeView))
+			{
+				return prefix;
+			}
+			int num = 0;
+			while (true)
+			{
+				string candidate = prefix + "new_tickingarea" + ((num == 0) ? "" : ("_" + num));
+				if (!KeyExists(worldStagingPath, candidate, treeView))
+				{
+					return candidate;
+				}
+				num++;
+			}
+		}
+		return text;
+	}
+
+	private static bool KeyExists(string worldStagingPath, string ldbKey, TreeView treeView)
+	{
+		string fileNameOnDisk = FileUtils.EncodeLdbKeyFileName(ldbKey) + PeStagingPaths.DataFileExtension;
+		if (File.Exists(PeStagingPaths.BuildDataAbsolutePath(worldStagingPath, fileNameOnDisk)))
+		{
+			return true;
+		}
+		return KeyExistsInTree(treeView, ldbKey);
+	}
+
+	private static bool KeyExistsInTree(TreeView treeView, string ldbKey)
+	{
+		if (treeView == null || string.IsNullOrWhiteSpace(ldbKey))
+		{
+			return false;
+		}
+		List<TreeNode> list = new List<TreeNode>();
+		FindTreeNodesByKey(treeView.Nodes, ldbKey, list);
+		return list.Count > 0;
 	}
 
 	private static void AddEntryFromFile(List<PeManagedDataEntry> list, string absolutePath, PeManagedDataKind kind)
@@ -486,34 +688,40 @@ public static class PeLdbDataHelper
 		return null;
 	}
 
+	private static TagNodeList CreateIntList(int a, int b, int c)
+	{
+		TagNodeList tagNodeList = new TagNodeList(TagType.TAG_INT);
+		tagNodeList.Add(new TagNodeInt(a));
+		tagNodeList.Add(new TagNodeInt(b));
+		tagNodeList.Add(new TagNodeInt(c));
+		return tagNodeList;
+	}
+
 	private static byte[] BuildEmptyStructureBytes()
 	{
 		TagNodeCompound tagNodeCompound = new TagNodeCompound();
-		tagNodeCompound["format_version"] = new TagNodeInt(0);
-		tagNodeCompound["size"] = new TagNodeIntArray(new int[3]);
-		TagNodeCompound tagNodeCompound2 = new TagNodeCompound();
+		tagNodeCompound["format_version"] = new TagNodeInt(1);
+		tagNodeCompound["size"] = CreateIntList(0, 0, 0);
 		TagNodeList tagNodeList = new TagNodeList(TagType.TAG_INT);
 		tagNodeList.Add(new TagNodeInt(0));
-		TagNodeList tagNodeList2 = new TagNodeList(TagType.TAG_LIST);
-		tagNodeList2.ChangeValueType(TagType.TAG_INT);
-		tagNodeList2.Add(tagNodeList);
-		tagNodeList2.Add((TagNode)tagNodeList.Copy());
-		tagNodeCompound2["block_indices"] = tagNodeList2;
+		TagNodeList tagNodeList2 = new TagNodeList(TagType.TAG_INT);
+		tagNodeList2.Add(new TagNodeInt(0));
+		TagNodeList tagNodeList3 = new TagNodeList(TagType.TAG_LIST);
+		tagNodeList3.Add(tagNodeList);
+		tagNodeList3.Add(tagNodeList2);
+		TagNodeCompound tagNodeCompound2 = new TagNodeCompound();
+		tagNodeCompound2["block_indices"] = tagNodeList3;
 		tagNodeCompound2["entities"] = new TagNodeList(TagType.TAG_COMPOUND);
 		TagNodeCompound tagNodeCompound3 = new TagNodeCompound();
 		TagNodeCompound tagNodeCompound4 = new TagNodeCompound();
-		TagNodeList tagNodeList3 = new TagNodeList(TagType.TAG_COMPOUND);
-		tagNodeList3.Add(new TagNodeCompound());
-		tagNodeCompound4["block_palette"] = tagNodeList3;
-		TagNodeCompound tagNodeCompound5 = new TagNodeCompound();
-		TagNodeCompound tagNodeCompound6 = new TagNodeCompound();
-		tagNodeCompound6["block_entity_data"] = new TagNodeCompound();
-		tagNodeCompound5["0"] = tagNodeCompound6;
-		tagNodeCompound4["block_position_data"] = tagNodeCompound5;
+		TagNodeList tagNodeList4 = new TagNodeList(TagType.TAG_COMPOUND);
+		tagNodeList4.Add(new TagNodeCompound());
+		tagNodeCompound4["block_palette"] = tagNodeList4;
+		tagNodeCompound4["block_position_data"] = new TagNodeCompound();
 		tagNodeCompound3["default"] = tagNodeCompound4;
 		tagNodeCompound2["palette"] = tagNodeCompound3;
 		tagNodeCompound["structure"] = tagNodeCompound2;
-		tagNodeCompound["structure_world_origin"] = new TagNodeIntArray(new int[3]);
+		tagNodeCompound["structure_world_origin"] = CreateIntList(0, 0, 0);
 		return CompoundToFileBytes(tagNodeCompound);
 	}
 
@@ -541,7 +749,9 @@ public static class PeLdbDataHelper
 	private static byte[] CompoundToFileBytes(TagNodeCompound compound)
 	{
 		MemoryStream memoryStream = new MemoryStream();
-		new NbtTree(compound).WriteTo(memoryStream);
+		NbtTree nbtTree = new NbtTree(compound);
+		nbtTree.UseBigEndian = false;
+		nbtTree.WriteTo(memoryStream);
 		return memoryStream.ToArray();
 	}
 }

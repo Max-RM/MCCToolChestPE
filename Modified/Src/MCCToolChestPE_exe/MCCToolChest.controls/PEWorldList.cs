@@ -39,6 +39,14 @@ public class PEWorldList : UserControl
 
 	private FlowLayoutPanel W9UhFuTjSP;
 
+	private ComboBox _savePathCombo;
+
+	private Button _addCustomPathButton;
+
+	private Button _removeCustomPathButton;
+
+	private string _currentWorldsRoot;
+
 	public event EventHandler WorldSelected
 	{
 		[MethodImpl(MethodImplOptions.NoInlining)]
@@ -191,13 +199,137 @@ public class PEWorldList : UserControl
 		{
 			_ = ((object[])null)[0];
 		}
+		if (string.IsNullOrWhiteSpace(_currentWorldsRoot))
+		{
+			_currentWorldsRoot = Utils.GetGetMCPESaveFolder();
+		}
+		W9UhFuTjSP.Controls.Clear();
 		PEFileWorker pEFileWorker = new PEFileWorker();
-		List<PEWorldFolder> list = pEFileWorker.LoadFileList();
+		List<PEWorldFolder> list = pEFileWorker.LoadFileList(_currentWorldsRoot);
 		foreach (PEWorldFolder item in list)
 		{
 			PEWorldUI value = new PEWorldUI(lS3hE3XDSh, p8bhrKLDNF, item);
 			W9UhFuTjSP.Controls.Add(value);
 		}
+	}
+
+	public void InitializeSavePathSelector()
+	{
+		if (_savePathCombo == null)
+		{
+			return;
+		}
+		_savePathCombo.Items.Clear();
+		foreach (PeWorldSavePathItem availablePath in PeWorldSavePathRegistry.GetAvailablePaths())
+		{
+			_savePathCombo.Items.Add(availablePath);
+		}
+		if (_savePathCombo.Items.Count > 0)
+		{
+			_savePathCombo.SelectedIndex = 0;
+		}
+	}
+
+	private void ReloadSelectedSavePath()
+	{
+		if (_savePathCombo?.SelectedItem is PeWorldSavePathItem peWorldSavePathItem)
+		{
+			_currentWorldsRoot = peWorldSavePathItem.Path;
+			LoadPEWorldList();
+		}
+	}
+
+	private void SavePathComboSelectedIndexChanged(object sender, EventArgs e)
+	{
+		ReloadSelectedSavePath();
+	}
+
+	private void AddCustomPathClick(object sender, EventArgs e)
+	{
+		using FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog
+		{
+			Description = "Select a custom Minecraft worlds folder"
+		};
+		if (folderBrowserDialog.ShowDialog(this) != DialogResult.OK)
+		{
+			return;
+		}
+		string text = PromptForText("Display name for this save location:", "Custom Save Path", "Custom Worlds");
+		if (string.IsNullOrWhiteSpace(text))
+		{
+			text = "Custom Worlds";
+		}
+		PeWorldSavePathRegistry.AddCustomPath(text, folderBrowserDialog.SelectedPath);
+		InitializeSavePathSelector();
+		for (int i = 0; i < _savePathCombo.Items.Count; i++)
+		{
+			if (_savePathCombo.Items[i] is PeWorldSavePathItem peWorldSavePathItem && string.Equals(peWorldSavePathItem.Path, folderBrowserDialog.SelectedPath, StringComparison.OrdinalIgnoreCase))
+			{
+				_savePathCombo.SelectedIndex = i;
+				break;
+			}
+		}
+	}
+
+	private void RemoveCustomPathClick(object sender, EventArgs e)
+	{
+		if (!(_savePathCombo?.SelectedItem is PeWorldSavePathItem peWorldSavePathItem) || !peWorldSavePathItem.IsCustom)
+		{
+			MessageBox.Show(this, "Select a custom save path to remove.", Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+			return;
+		}
+		if (MessageBox.Show(this, "Remove custom save path:\n" + peWorldSavePathItem.Label, Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+		{
+			return;
+		}
+		PeWorldSavePathRegistry.RemoveCustomPath(peWorldSavePathItem.Label);
+		InitializeSavePathSelector();
+	}
+
+	private static string PromptForText(string prompt, string title, string defaultValue)
+	{
+		using Form form = new Form
+		{
+			Text = title,
+			FormBorderStyle = FormBorderStyle.FixedDialog,
+			StartPosition = FormStartPosition.CenterParent,
+			ClientSize = new Size(360, 120),
+			MaximizeBox = false,
+			MinimizeBox = false
+		};
+		Label label = new Label
+		{
+			Text = prompt,
+			Location = new Point(12, 12),
+			AutoSize = true
+		};
+		TextBox textBox = new TextBox
+		{
+			Location = new Point(12, 36),
+			Width = 330,
+			Text = defaultValue
+		};
+		Button ok = new Button
+		{
+			Text = "OK",
+			DialogResult = DialogResult.OK,
+			Location = new Point(184, 72),
+			Size = new Size(75, 28)
+		};
+		Button cancel = new Button
+		{
+			Text = "Cancel",
+			DialogResult = DialogResult.Cancel,
+			Location = new Point(267, 72),
+			Size = new Size(75, 28)
+		};
+		form.Controls.Add(label);
+		form.Controls.Add(textBox);
+		form.Controls.Add(ok);
+		form.Controls.Add(cancel);
+		form.AcceptButton = ok;
+		form.CancelButton = cancel;
+		return form.ShowDialog() == DialogResult.OK ? textBox.Text : null;
 	}
 
 	[MethodImpl(MethodImplOptions.NoInlining)]
@@ -298,7 +430,8 @@ public class PEWorldList : UserControl
 		DialogResult dialogResult = folderNameEntry.ShowDialog(this);
 		if (dialogResult == DialogResult.OK)
 		{
-			string path = Utils.GetGetMCPESaveFolder() + Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(20100) + folderNameEntry.FolderName;
+			string root = string.IsNullOrWhiteSpace(_currentWorldsRoot) ? Utils.GetGetMCPESaveFolder() : _currentWorldsRoot;
+			string path = root + Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(20100) + folderNameEntry.FolderName;
 			PEWorldFolder pEWorldFolder = new PEWorldFolder();
 			pEWorldFolder.Name = folderNameEntry.FolderName;
 			pEWorldFolder.Path = path;
@@ -351,6 +484,9 @@ public class PEWorldList : UserControl
 		pG9hAbbie8 = new Button();
 		XCChdtVBqh = new Label();
 		dNuhH5hhxJ = new Button();
+		_savePathCombo = new ComboBox();
+		_addCustomPathButton = new Button();
+		_removeCustomPathButton = new Button();
 		W9UhFuTjSP = new FlowLayoutPanel();
 		SuspendLayout();
 		iPwh7LKFXp.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
@@ -385,19 +521,39 @@ public class PEWorldList : UserControl
 		dNuhH5hhxJ.Text = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(20320);
 		dNuhH5hhxJ.UseVisualStyleBackColor = true;
 		dNuhH5hhxJ.Click += UvwhNSuxUF;
+		_savePathCombo.DropDownStyle = ComboBoxStyle.DropDownList;
+		_savePathCombo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+		_savePathCombo.Location = new Point(5, 28);
+		_savePathCombo.Size = new Size(260, 21);
+		_savePathCombo.SelectedIndexChanged += SavePathComboSelectedIndexChanged;
+		_addCustomPathButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+		_addCustomPathButton.Location = new Point(272, 27);
+		_addCustomPathButton.Size = new Size(56, 23);
+		_addCustomPathButton.Text = "Add";
+		_addCustomPathButton.UseVisualStyleBackColor = true;
+		_addCustomPathButton.Click += AddCustomPathClick;
+		_removeCustomPathButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+		_removeCustomPathButton.Location = new Point(331, 27);
+		_removeCustomPathButton.Size = new Size(56, 23);
+		_removeCustomPathButton.Text = "Remove";
+		_removeCustomPathButton.UseVisualStyleBackColor = true;
+		_removeCustomPathButton.Click += RemoveCustomPathClick;
 		W9UhFuTjSP.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 		W9UhFuTjSP.AutoScroll = true;
 		W9UhFuTjSP.BackColor = Color.White;
 		W9UhFuTjSP.BorderStyle = BorderStyle.FixedSingle;
-		W9UhFuTjSP.Location = new Point(0, 25);
+		W9UhFuTjSP.Location = new Point(0, 56);
 		W9UhFuTjSP.Name = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(20342);
 		W9UhFuTjSP.Padding = new Padding(0, 3, 0, 0);
-		W9UhFuTjSP.Size = new Size(392, 386);
+		W9UhFuTjSP.Size = new Size(392, 355);
 		W9UhFuTjSP.TabIndex = 5;
 		W9UhFuTjSP.MouseEnter += Iy2hDUYt6G;
 		base.AutoScaleDimensions = new SizeF(6f, 13f);
 		base.AutoScaleMode = AutoScaleMode.Font;
 		BackColor = Color.White;
+		base.Controls.Add(_removeCustomPathButton);
+		base.Controls.Add(_addCustomPathButton);
+		base.Controls.Add(_savePathCombo);
 		base.Controls.Add(W9UhFuTjSP);
 		base.Controls.Add(dNuhH5hhxJ);
 		base.Controls.Add(XCChdtVBqh);
@@ -407,5 +563,6 @@ public class PEWorldList : UserControl
 		base.Size = new Size(392, 444);
 		ResumeLayout(performLayout: false);
 		PerformLayout();
+		InitializeSavePathSelector();
 	}
 }

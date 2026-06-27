@@ -711,20 +711,20 @@
         "net472": {
           "targetAlias": "net472",
           "projectReferences": {
-            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\ClearScript.csproj": {
-              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\ClearScript.csproj"
+            "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\ClearScript.csproj": {
+              "projectPath": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\ClearScript\\ClearScript.csproj"
             },
-            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\FastColoredTextBox\\FastColoredTextBox.csproj": {
-              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\FastColoredTextBox\\FastColoredTextBox.csproj"
+            "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\FastColoredTextBox\\FastColoredTextBox.csproj": {
+              "projectPath": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\FastColoredTextBox\\FastColoredTextBox.csproj"
             },
-            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NAppUpdate.Framework\\NAppUpdate.Framework.csproj": {
-              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NAppUpdate.Framework\\NAppUpdate.Framework.csproj"
+            "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NAppUpdate.Framework\\NAppUpdate.Framework.csproj": {
+              "projectPath": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NAppUpdate.Framework\\NAppUpdate.Framework.csproj"
             },
             "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTExplorerWrapper\\NBTExplorerWrapper.csproj": {
               "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTExplorerWrapper\\NBTExplorerWrapper.csproj"
             },
-            "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\NBTModel.csproj": {
-              "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\NBTModel.csproj"
+            "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\NBTModel.csproj": {
+              "projectPath": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NBTModel\\NBTModel.csproj"
             },
             "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\Substrate\\Substrate.csproj": {
               "projectPath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\Substrate\\Substrate.csproj"

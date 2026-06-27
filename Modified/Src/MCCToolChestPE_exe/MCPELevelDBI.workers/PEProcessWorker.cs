@@ -125,7 +125,6 @@ public class PEProcessWorker
 				WriteWildCardRecords(folderPath, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(87132), Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206));
 				WriteWildCardRecords(folderPath, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(87152), Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206));
 				WriteWildCardRecords(folderPath, "structuretemplate_", Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206));
-				WriteWildCardRecords(folderPath, "tickingarea_", Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206));
 				WriteExactRecords(folderPath, new string[4]
 				{
 					"DedicatedServerForcedCorruption",
@@ -670,6 +669,11 @@ public class PEProcessWorker
 			_ = ((object[])null)[0];
 		}
 		LevelDBWorker levelDBWorker = PEUtility.OpenDBWorker(P_1);
+		foreach (string pendingLdbDeletion in Working.PendingLdbDeletions)
+		{
+			levelDBWorker.Delete(FileUtils.LdbKeyToBytes(pendingLdbDeletion));
+		}
+		Working.ClearPendingLdbDeletions();
 		foreach (ModifiedFile item in P_0)
 		{
 			if (item.Tag is ChunkData)
@@ -680,10 +684,13 @@ public class PEProcessWorker
 					AM5SpzUKDgK(item, levelDBWorker);
 				}
 			}
-			else if (item.Tag is IndexEntry)
+			else if (item.Tag is IndexEntry indexEntry)
 			{
-				IndexEntry indexEntry = item.Tag as IndexEntry;
-				if (indexEntry.FileName != Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(43516))
+				if (item.FileState == FileStateType.DELETED)
+				{
+					levelDBWorker.Delete(FileUtils.LdbKeyToBytes(indexEntry.FileName));
+				}
+				else if (indexEntry.FileName != Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(43516))
 				{
 					Pb0SpIiwyWH(indexEntry.FileName, indexEntry.FilePath, P_1, levelDBWorker);
 				}
@@ -1417,8 +1424,9 @@ public class PEProcessWorker
 			_ = ((object[])null)[0];
 		}
 		LevelDBWorker levelDBWorker = PEUtility.OpenDBWorker(path);
-		levelDBWorker.Delete(Encoding.ASCII.GetBytes(key));
+		levelDBWorker.Delete(FileUtils.LdbKeyToBytes(key));
 		levelDBWorker.CloseDB();
+		Working.QueueLdbDeletion(key);
 	}
 
 	[MethodImpl(MethodImplOptions.NoInlining)]

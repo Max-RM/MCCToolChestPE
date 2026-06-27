@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tc6Qp4qmfCRsCplixXIDFL5kloF8FtH+PDBUqiv+HJ/vwhggqqz16VZsZDH49W7H4mnGaWuFI10ERTUq17A3ww==",
+  "dgSpecHash": "tWh6ekLG0J/z6lnUqk1f9bH2/l3ECmNmz5FjEN1CbJfQ2ZanR95Mrr9Er7duq56tyvVPH02zialLjS4GbaH7mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NAppUpdate.Framework\\NAppUpdate.Framework.csproj",
+  "projectFilePath": "c:\\Users\\Max\\Desktop\\M\\Projects\\ReMCCTPE\\MCCToolChestPE\\Modified\\Src\\NAppUpdate.Framework\\NAppUpdate.Framework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Max\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
     "C:\\Users\\Max\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net20\\1.0.3\\microsoft.netframework.referenceassemblies.net20.1.0.3.nupkg.sha512"

@@ -62,7 +62,6 @@ public class PEFileTree
 		lSgSnZFH4Ph(P_0, P_1);
 		LtlSnfMDHRa(P_0, P_1, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436), Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(87116));
 		LtlSnfMDHRa(P_0, P_1, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206), Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(87132));
-		LtlSnfMDHRa(P_0, P_1, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206), Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(87152));
 		OHYSnExtraData(P_0, P_1);
 		for (int d = 0; d < 3; d++)
 		{
@@ -86,16 +85,16 @@ public class PEFileTree
 		string dataFolderKey = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206);
 		TreeNode portalsNode = P_1.Nodes.Add(PeTreeTags.PortalsFolder, PeTreeTags.PortalsFolder);
 		portalsNode.Name = PeTreeTags.PortalsFolder;
-		QMYSnKmL9tX(portalsNode, dataFolderKey);
+		QMYSnKmL9tX(portalsNode, PeTreeTags.PortalsFolder);
 		AttachPortalsNode(P_0, portalsNode);
 		TreeNode structuresNode = P_1.Nodes.Add(PeTreeTags.StructuresFolder, PeTreeTags.StructuresFolder);
 		structuresNode.Name = PeTreeTags.StructuresFolder;
 		structuresNode.Tag = PeTreeTags.OpenStructureManager;
-		QMYSnKmL9tX(structuresNode, dataFolderKey);
+		QMYSnKmL9tX(structuresNode, PeTreeTags.StructuresFolder);
 		TreeNode tickingareasNode = P_1.Nodes.Add(PeTreeTags.TickingareasFolder, PeTreeTags.TickingareasFolder);
 		tickingareasNode.Name = PeTreeTags.TickingareasFolder;
 		tickingareasNode.Tag = PeTreeTags.OpenTickingareaManager;
-		QMYSnKmL9tX(tickingareasNode, dataFolderKey);
+		QMYSnKmL9tX(tickingareasNode, PeTreeTags.TickingareasFolder);
 		TreeNode mapsNode = P_1.Nodes.Add(PeTreeTags.MapsNode, PeTreeTags.MapsNode);
 		mapsNode.Name = PeTreeTags.MapsNode;
 		mapsNode.Tag = PeTreeTags.OpenPlayerMaps;
@@ -537,13 +536,19 @@ public class PEFileTree
 			}
 			else if (key.StartsWith("pe_dim_", StringComparison.OrdinalIgnoreCase) || (key.StartsWith("dm") && key.Length > 2 && char.IsDigit(key[2])))
 			{
-				result = TCSSnmOuqX2[Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(21936)];
+				result = TreeIconLoader.IconCustomDimension;
 			}
-			else if (string.Equals(key, PeTreeTags.StructuresFolder, StringComparison.OrdinalIgnoreCase)
-				|| string.Equals(key, PeTreeTags.TickingareasFolder, StringComparison.OrdinalIgnoreCase)
-				|| string.Equals(key, PeTreeTags.PortalsFolder, StringComparison.OrdinalIgnoreCase))
+			else if (string.Equals(key, PeTreeTags.StructuresFolder, StringComparison.OrdinalIgnoreCase))
 			{
-				result = TCSSnmOuqX2[Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206)];
+				result = TreeIconLoader.IconStructures;
+			}
+			else if (string.Equals(key, PeTreeTags.TickingareasFolder, StringComparison.OrdinalIgnoreCase))
+			{
+				result = TreeIconLoader.IconTickingareas;
+			}
+			else if (string.Equals(key, PeTreeTags.PortalsFolder, StringComparison.OrdinalIgnoreCase))
+			{
+				result = TreeIconLoader.IconPortals;
 			}
 			else if (string.Equals(key, PeTreeTags.MapsNode, StringComparison.OrdinalIgnoreCase))
 			{

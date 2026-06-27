@@ -9,6 +9,23 @@ namespace MCCToolChest.model;
 
 public static class Working
 {
+	internal static Action<IEnumerable<string>> FlushStagingEntriesForExport;
+
+	internal static readonly HashSet<string> PendingLdbDeletions = new HashSet<string>(StringComparer.Ordinal);
+
+	public static void QueueLdbDeletion(string ldbKey)
+	{
+		if (!string.IsNullOrWhiteSpace(ldbKey))
+		{
+			PendingLdbDeletions.Add(ldbKey.Trim());
+		}
+	}
+
+	public static void ClearPendingLdbDeletions()
+	{
+		PendingLdbDeletions.Clear();
+	}
+
 	private static Dictionary<long, long> wlvStQjoSQd;
 
 	private static bool YFQStOSmGH2;

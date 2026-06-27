@@ -605,15 +605,15 @@ public class LevelDBWorker
 			_ = ((object[])null)[0];
 		}
 		List<DBRecord> list = new List<DBRecord>();
+		const int maxRecords = 100000;
 		using (Iterator iterator = CreateIterator(LevelDBInterop.leveldb_readoptions_create()))
 		{
 			iterator.Seek(P_1);
-			while (iterator.IsValid())
+			while (iterator.IsValid() && list.Count < maxRecords)
 			{
-				DBRecord item = new DBRecord(iterator.Key(), iterator.Value());
 				if (iterator.KeyAsString().StartsWith(P_1))
 				{
-					list.Add(item);
+					list.Add(new DBRecord(iterator.Key(), iterator.Value()));
 					iterator.Next();
 					continue;
 				}
@@ -735,6 +735,23 @@ public class LevelDBWorker
 		}
 	}
 
+	private static bool IsAsciiTextKey(byte[] key)
+	{
+		if (key == null || key.Length == 0)
+		{
+			return false;
+		}
+		for (int i = 0; i < key.Length; i++)
+		{
+			byte b = key[i];
+			if (b < 32 || b > 126)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
 	private bool TryParseBedrockChunkKey(byte[] key, out int dimension, out int chunkX, out int chunkZ, out int tag)
 	{
 		while (false)
@@ -750,6 +767,10 @@ public class LevelDBWorker
 			return false;
 		}
 		if (key.Length != 9 && key.Length != 10 && key.Length != 13 && key.Length != 14)
+		{
+			return false;
+		}
+		if (IsAsciiTextKey(key))
 		{
 			return false;
 		}

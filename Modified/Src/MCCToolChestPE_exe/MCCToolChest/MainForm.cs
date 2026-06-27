@@ -287,6 +287,8 @@ public class MainForm : Form
 
 	private ToolStripSeparator g6XSmKWoPwS;
 
+	private ToolStripMenuItem qN7RenameMenuItem;
+
 	private ColumnHeader VuLSmhptcV1;
 
 	private ToolStripStatusLabel xfFSmma9KwJ;
@@ -569,6 +571,8 @@ public class MainForm : Form
 		Hm96YcXHNOTbKhIs4rg.TtVGNoKztHEBW();
 		b6jShGgrqLL = new MCNBTTreeSupport();
 		KJySh48Y2Cp = new Dictionary<string, ModifiedFile>();
+		Working.FlushStagingEntriesForExport = qN7FlushStagingEntriesForExport;
+		TreeIconLoader.EnsurePlaceholderIcons();
 		VrfLq3utcbtaHoMfeNR.LTsSYeXGHCA(Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(88794));
 		try
 		{
@@ -950,6 +954,7 @@ public class MainForm : Form
 		Working.MapsGenerated = new Dictionary<string, bool>();
 		Y9dShRQ2Gc9.Items.Clear();
 		KJySh48Y2Cp.Clear();
+		Working.ClearPendingLdbDeletions();
 		tPRSmnjF0Jx.tvNBTEdit.Nodes.Clear();
 		tPRSmnjF0Jx.tvNBTEdit.SelectedNode = null;
 		MPASmUndjLJ.Clear();
@@ -1247,6 +1252,7 @@ public class MainForm : Form
 				OoLSsUwRB3t(DisplayUI.NONE, false, false, false, false, false, false);
 				Y9dShRQ2Gc9.Items.Clear();
 				KJySh48Y2Cp.Clear();
+				Working.ClearPendingLdbDeletions();
 				tPRSmnjF0Jx.tvNBTEdit.Nodes.Clear();
 				tPRSmnjF0Jx.tvNBTEdit.SelectedNode = null;
 				MPASmUndjLJ.Clear();
@@ -1455,8 +1461,16 @@ public class MainForm : Form
 				if (!(selectedNode.Tag is ChunkData) && text3 != null && KJySh48Y2Cp.ContainsKey(text3))
 				{
 					ModifiedFile modifiedFile = KJySh48Y2Cp[text3];
-					tPRSmnjF0Jx.Controller.OpenExistingNode(modifiedFile.FileNode);
-					Y9dShRQ2Gc9.Text = modifiedFile.ToString();
+					if (modifiedFile.FileNode != null)
+					{
+						tPRSmnjF0Jx.Controller.OpenExistingNode(modifiedFile.FileNode);
+						Y9dShRQ2Gc9.Text = modifiedFile.ToString();
+					}
+					else if (!string.IsNullOrWhiteSpace(text))
+					{
+						QAOSskSf7ss(new string[1] { text });
+						Y9dShRQ2Gc9.SelectedIndex = -1;
+					}
 				}
 				else if (!(selectedNode.Tag is string mapsTag && mapsTag == PeTreeTags.OpenPlayerMaps))
 				{
@@ -2146,6 +2160,10 @@ public class MainForm : Form
 			{
 				T5MSq8ErPUD();
 			}
+			if (findOptions.Action == FindOptionsAction.FIND_LDB_KEY)
+			{
+				qN7OpenFindLdbKey();
+			}
 		}
 	}
 
@@ -2502,6 +2520,25 @@ public class MainForm : Form
 		{
 			CPhSqk0depC();
 		}
+		else if (selectedNode != null && selectedNode.Tag is DimensionWorkingData dimensionWorkingData)
+		{
+			qN7DeleteDimensionNode(selectedNode, dimensionWorkingData);
+		}
+		else if (selectedNode != null && selectedNode.Tag is string tag)
+		{
+			if (tag == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436))
+			{
+				YcfSqY4ydAx();
+			}
+			else if (tag == PeTreeTags.OpenStructureManager)
+			{
+				qN7DeleteManagedFolder(PeManagedDataKind.Structure, "Delete all structure templates in this world?");
+			}
+			else if (tag == PeTreeTags.OpenTickingareaManager)
+			{
+				qN7DeleteManagedFolder(PeManagedDataKind.Tickingarea, "Delete all tickingareas in this world?");
+			}
+		}
 		else
 		{
 			YcfSqY4ydAx();
@@ -2554,15 +2591,7 @@ public class MainForm : Form
 		{
 			return;
 		}
-		string caption = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(92238);
-		string text = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(92278);
-		bool verifyOnDelete = Settings.Default.VerifyOnDelete;
-		DialogResult dialogResult = DialogResult.Yes;
-		if (verifyOnDelete)
-		{
-			dialogResult = MessageBox.Show(text, caption, MessageBoxButtons.YesNo);
-		}
-		if (dialogResult != DialogResult.Yes)
+		if (!qN7ShowTripleConfirmDialog("Delete All Players", "This will permanently remove all player data files from the staging world.\nTarget: " + selectedNode.Text))
 		{
 			return;
 		}
@@ -2626,6 +2655,19 @@ public class MainForm : Form
 	}
 
 	[MethodImpl(MethodImplOptions.NoInlining)]
+	private void qN7RenameMenuClick(object P_0, EventArgs P_1)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		if (CZCShKpUaJ9.SelectedNode?.Tag is IndexEntry indexEntry)
+		{
+			qN7RenameIndexEntry(indexEntry);
+		}
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
 	private void uJ0Sqr3Z0yA()
 	{
 		while (false)
@@ -2633,7 +2675,7 @@ public class MainForm : Form
 			_ = ((object[])null)[0];
 		}
 		TreeNode selectedNode = CZCShKpUaJ9.SelectedNode;
-		if ((selectedNode != null && selectedNode.Tag != null && selectedNode.Tag is IndexEntry && ((IndexEntry)selectedNode.Tag).ParentName == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436)) || selectedNode.Tag is ChunkData || selectedNode.Tag is PERegion)
+		if (selectedNode != null && selectedNode.Tag != null)
 		{
 			if (selectedNode.Tag is PERegion)
 			{
@@ -2645,9 +2687,437 @@ public class MainForm : Form
 				DQtSKKL6FIv();
 				return;
 			}
-			IndexEntry indexEntry = selectedNode.Tag as IndexEntry;
-			jkSSK3vvJqy(Path.GetFileName(indexEntry.FilePath));
+			if (selectedNode.Tag is IndexEntry indexEntry && qN7IsDeletableIndexEntry(indexEntry))
+			{
+				qN7DeleteIndexEntry(indexEntry);
+			}
 		}
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private bool qN7IsDeletableIndexEntry(IndexEntry indexEntry)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		if (indexEntry == null)
+		{
+			return false;
+		}
+		if (string.Equals(indexEntry.FileName, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(43516), StringComparison.OrdinalIgnoreCase))
+		{
+			return false;
+		}
+		return indexEntry.ParentName == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436)
+			|| indexEntry.ParentName == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206)
+			|| string.Equals(indexEntry.ParentName, PeTreeTags.StructuresFolder, StringComparison.OrdinalIgnoreCase)
+			|| string.Equals(indexEntry.ParentName, PeTreeTags.TickingareasFolder, StringComparison.OrdinalIgnoreCase)
+			|| string.Equals(indexEntry.ParentName, PeTreeTags.PortalsFolder, StringComparison.OrdinalIgnoreCase)
+			|| string.Equals(indexEntry.FileName, PeTreeTags.PortalsKey, StringComparison.OrdinalIgnoreCase);
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private bool qN7IsRenamableIndexEntry(IndexEntry indexEntry)
+	{
+		return qN7IsDeletableIndexEntry(indexEntry);
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private void qN7RenameIndexEntry(IndexEntry indexEntry)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		if (indexEntry == null)
+		{
+			return;
+		}
+		PeManagedDataKind kind = PeManagedDataKind.Structure;
+		if (indexEntry.FileName.StartsWith(PeTreeTags.TickingareaPrefix, StringComparison.OrdinalIgnoreCase)
+			|| string.Equals(indexEntry.ParentName, PeTreeTags.TickingareasFolder, StringComparison.OrdinalIgnoreCase))
+		{
+			kind = PeManagedDataKind.Tickingarea;
+		}
+		using Form form = new Form
+		{
+			Text = "Rename Entry",
+			FormBorderStyle = FormBorderStyle.FixedDialog,
+			StartPosition = FormStartPosition.CenterParent,
+			ClientSize = new Size(460, 120),
+			MaximizeBox = false,
+			MinimizeBox = false
+		};
+		Label label = new Label
+		{
+			Text = "LDB key:",
+			Location = new Point(12, 16),
+			AutoSize = true
+		};
+		TextBox textBox = new TextBox
+		{
+			Location = new Point(12, 40),
+			Width = 430,
+			Text = indexEntry.FileName
+		};
+		Button button = new Button
+		{
+			Text = "Rename",
+			Location = new Point(286, 72),
+			Size = new Size(75, 28)
+		};
+		Button button2 = new Button
+		{
+			Text = "Cancel",
+			DialogResult = DialogResult.Cancel,
+			Location = new Point(367, 72),
+			Size = new Size(75, 28)
+		};
+		button.Click += delegate
+		{
+			form.DialogResult = DialogResult.OK;
+		};
+		form.Controls.Add(label);
+		form.Controls.Add(textBox);
+		form.Controls.Add(button);
+		form.Controls.Add(button2);
+		form.CancelButton = button2;
+		form.AcceptButton = button;
+		if (form.ShowDialog(this) != DialogResult.OK)
+		{
+			return;
+		}
+		string newKey = textBox.Text.Trim();
+		if (string.IsNullOrWhiteSpace(newKey) || string.Equals(newKey, indexEntry.FileName, StringComparison.Ordinal))
+		{
+			return;
+		}
+		string oldKey = indexEntry.FileName;
+		if (!PeLdbDataHelper.RenameEntry(Working.T92StMGt1p4(), oldKey, newKey, CZCShKpUaJ9, kind))
+		{
+			MessageBox.Show(this, "Could not rename entry. The new key may already exist or the file is missing.", "Rename", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+			return;
+		}
+		if (KJySh48Y2Cp.ContainsKey(oldKey))
+		{
+			KJySh48Y2Cp.Remove(oldKey);
+		}
+		qN7MarkImportedEntryDirect(newKey);
+		TreeNode treeNode = qN7FindTreeNodeByKey(CZCShKpUaJ9.Nodes, newKey);
+		if (treeNode != null)
+		{
+			G5fSsR0fB3e(treeNode, FileStateType.MODIFIED);
+		}
+		fYSSs12pvYk();
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private bool qN7ShowTripleConfirmDialog(string title, string message)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		using Form form = new Form
+		{
+			Text = title,
+			FormBorderStyle = FormBorderStyle.FixedDialog,
+			StartPosition = FormStartPosition.CenterParent,
+			ClientSize = new Size(420, 210),
+			MaximizeBox = false,
+			MinimizeBox = false
+		};
+		Label label = new Label
+		{
+			Text = message,
+			Location = new Point(12, 12),
+			Size = new Size(390, 48)
+		};
+		CheckBox checkBox = new CheckBox
+		{
+			Text = "I understand this cannot be undone.",
+			Location = new Point(12, 70),
+			AutoSize = true
+		};
+		CheckBox checkBox2 = new CheckBox
+		{
+			Text = "I have a backup of this world.",
+			Location = new Point(12, 96),
+			AutoSize = true
+		};
+		CheckBox checkBox3 = new CheckBox
+		{
+			Text = "Proceed with deletion now.",
+			Location = new Point(12, 122),
+			AutoSize = true
+		};
+		Button button = new Button
+		{
+			Text = "Delete",
+			Location = new Point(244, 160),
+			Size = new Size(75, 28),
+			Enabled = false
+		};
+		Button button2 = new Button
+		{
+			Text = "Cancel",
+			DialogResult = DialogResult.Cancel,
+			Location = new Point(327, 160),
+			Size = new Size(75, 28)
+		};
+		EventHandler value = delegate
+		{
+			button.Enabled = checkBox.Checked && checkBox2.Checked && checkBox3.Checked;
+		};
+		checkBox.CheckedChanged += value;
+		checkBox2.CheckedChanged += value;
+		checkBox3.CheckedChanged += value;
+		button.Click += delegate
+		{
+			form.DialogResult = DialogResult.OK;
+		};
+		form.Controls.Add(label);
+		form.Controls.Add(checkBox);
+		form.Controls.Add(checkBox2);
+		form.Controls.Add(checkBox3);
+		form.Controls.Add(button);
+		form.Controls.Add(button2);
+		form.CancelButton = button2;
+		return form.ShowDialog(this) == DialogResult.OK;
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private bool qN7ShowSingleCheckboxConfirm(string title, string message, string checkboxText)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		using Form form = new Form
+		{
+			Text = title,
+			FormBorderStyle = FormBorderStyle.FixedDialog,
+			StartPosition = FormStartPosition.CenterParent,
+			ClientSize = new Size(420, 160),
+			MaximizeBox = false,
+			MinimizeBox = false
+		};
+		Label label = new Label
+		{
+			Text = message,
+			Location = new Point(12, 12),
+			Size = new Size(390, 48)
+		};
+		CheckBox checkBox = new CheckBox
+		{
+			Text = checkboxText,
+			Location = new Point(12, 70),
+			AutoSize = true
+		};
+		Button button = new Button
+		{
+			Text = "Delete",
+			Location = new Point(244, 110),
+			Size = new Size(75, 28),
+			Enabled = false
+		};
+		Button button2 = new Button
+		{
+			Text = "Cancel",
+			DialogResult = DialogResult.Cancel,
+			Location = new Point(327, 110),
+			Size = new Size(75, 28)
+		};
+		checkBox.CheckedChanged += delegate
+		{
+			button.Enabled = checkBox.Checked;
+		};
+		button.Click += delegate
+		{
+			form.DialogResult = DialogResult.OK;
+		};
+		form.Controls.Add(label);
+		form.Controls.Add(checkBox);
+		form.Controls.Add(button);
+		form.Controls.Add(button2);
+		form.CancelButton = button2;
+		return form.ShowDialog(this) == DialogResult.OK;
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private void qN7DeleteIndexEntry(IndexEntry indexEntry)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		if (indexEntry == null)
+		{
+			return;
+		}
+		if (string.Equals(indexEntry.FileName, PeTreeTags.PortalsKey, StringComparison.OrdinalIgnoreCase)
+			|| string.Equals(indexEntry.ParentName, PeTreeTags.PortalsFolder, StringComparison.OrdinalIgnoreCase))
+		{
+			if (!qN7ShowSingleCheckboxConfirm("Delete Portals", "This will permanently remove all portal data from the staging world.", "Delete portal data now."))
+			{
+				return;
+			}
+		}
+		else
+		{
+			string text = "Delete entry:\n" + FileUtils.FormatLdbKeyForDisplay(indexEntry.FileName) + "?";
+			if (MessageBox.Show(text, "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes)
+			{
+				return;
+			}
+		}
+		List<TreeNode> list = new List<TreeNode>();
+		qN7FindAllTreeNodesByKey(CZCShKpUaJ9.Nodes, indexEntry.FileName, list);
+		if (string.Equals(indexEntry.FileName, PeTreeTags.PortalsKey, StringComparison.OrdinalIgnoreCase))
+		{
+			string path2 = Path.Combine(Working.T92StMGt1p4(), indexEntry.FilePath);
+			if (File.Exists(path2))
+			{
+				File.Delete(path2);
+			}
+			dpoSq3KdnSA(indexEntry.FileName);
+			if (KJySh48Y2Cp.ContainsKey(indexEntry.FileName))
+			{
+				KJySh48Y2Cp.Remove(indexEntry.FileName);
+			}
+			TreeNode[] array = CZCShKpUaJ9.Nodes.Find(PeTreeTags.PortalsFolder, searchAllChildren: true);
+			if (array != null && array.Length > 0)
+			{
+				array[0].Tag = PeTreeTags.PortalsFolder;
+			}
+			tPRSmnjF0Jx.tvNBTEdit.Nodes.Clear();
+			tPRSmnjF0Jx.tvNBTEdit.SelectedNode = null;
+			fYSSs12pvYk();
+			return;
+		}
+		foreach (TreeNode item in list)
+		{
+			item.Remove();
+		}
+		string path = Path.Combine(Working.T92StMGt1p4(), indexEntry.FilePath);
+		if (File.Exists(path))
+		{
+			File.Delete(path);
+		}
+		dpoSq3KdnSA(indexEntry.FileName);
+		if (KJySh48Y2Cp.ContainsKey(indexEntry.FileName))
+		{
+			KJySh48Y2Cp.Remove(indexEntry.FileName);
+		}
+		fYSSs12pvYk();
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private void qN7DeleteManagedFolder(PeManagedDataKind kind, string message)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		if (MessageBox.Show(message, "Delete All", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes)
+		{
+			return;
+		}
+		foreach (PeManagedDataEntry item in new List<PeManagedDataEntry>(PeLdbDataHelper.ListEntries(Working.T92StMGt1p4(), kind, CZCShKpUaJ9)))
+		{
+			PeLdbDataHelper.DeleteEntry(Working.T92StMGt1p4(), item.LdbKey, CZCShKpUaJ9);
+			if (KJySh48Y2Cp.ContainsKey(item.LdbKey))
+			{
+				KJySh48Y2Cp.Remove(item.LdbKey);
+			}
+		}
+		fYSSs12pvYk();
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private void qN7DeleteDimensionNode(TreeNode dimensionNode, DimensionWorkingData dimensionData)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		using Form form = new Form
+		{
+			Text = "Delete Dimension",
+			FormBorderStyle = FormBorderStyle.FixedDialog,
+			StartPosition = FormStartPosition.CenterParent,
+			ClientSize = new Size(420, 210),
+			MaximizeBox = false,
+			MinimizeBox = false
+		};
+		Label label = new Label
+		{
+			Text = "This will permanently remove the entire dimension and all of its regions/chunks from the staging world.\nTarget: " + dimensionNode.Text,
+			Location = new Point(12, 12),
+			Size = new Size(390, 48)
+		};
+		CheckBox checkBox = new CheckBox
+		{
+			Text = "I understand this cannot be undone.",
+			Location = new Point(12, 70),
+			AutoSize = true
+		};
+		CheckBox checkBox2 = new CheckBox
+		{
+			Text = "I have a backup of this world.",
+			Location = new Point(12, 96),
+			AutoSize = true
+		};
+		CheckBox checkBox3 = new CheckBox
+		{
+			Text = "Delete this entire dimension now.",
+			Location = new Point(12, 122),
+			AutoSize = true
+		};
+		Button button = new Button
+		{
+			Text = "Delete",
+			Location = new Point(244, 160),
+			Size = new Size(75, 28),
+			Enabled = false
+		};
+		Button button2 = new Button
+		{
+			Text = "Cancel",
+			DialogResult = DialogResult.Cancel,
+			Location = new Point(327, 160),
+			Size = new Size(75, 28)
+		};
+		EventHandler value = delegate
+		{
+			button.Enabled = checkBox.Checked && checkBox2.Checked && checkBox3.Checked;
+		};
+		checkBox.CheckedChanged += value;
+		checkBox2.CheckedChanged += value;
+		checkBox3.CheckedChanged += value;
+		button.Click += delegate
+		{
+			form.DialogResult = DialogResult.OK;
+		};
+		form.Controls.Add(label);
+		form.Controls.Add(checkBox);
+		form.Controls.Add(checkBox2);
+		form.Controls.Add(checkBox3);
+		form.Controls.Add(button);
+		form.Controls.Add(button2);
+		form.CancelButton = button2;
+		if (form.ShowDialog(this) != DialogResult.OK)
+		{
+			return;
+		}
+		if (Directory.Exists(dimensionData.Path))
+		{
+			Directory.Delete(dimensionData.Path, recursive: true);
+		}
+		dimensionNode.Remove();
+		Working.DataChanged = true;
+		fYSSs12pvYk();
 	}
 
 	[MethodImpl(MethodImplOptions.NoInlining)]
@@ -2661,6 +3131,7 @@ public class MainForm : Form
 		bool flag = false;
 		CZVSh9rVYwo.Visible = false;
 		RKaSmqyYTyO.Visible = false;
+		qN7RenameMenuItem.Visible = false;
 		jFxSmvItyKV.Visible = false;
 		ueZSmXPhHf0.Visible = false;
 		g6XSmKWoPwS.Visible = false;
@@ -2671,28 +3142,41 @@ public class MainForm : Form
 		}
 		else if (selectedNode != null && selectedNode.Tag != null)
 		{
-			g6XSmKWoPwS.Visible = (selectedNode.Tag is IndexEntry && ((IndexEntry)selectedNode.Tag).ParentName == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436)) || selectedNode.Tag is ChunkData;
+			if (selectedNode.Tag is DimensionWorkingData)
+			{
+				ueZSmXPhHf0.Visible = true;
+				flag = true;
+			}
+			g6XSmKWoPwS.Visible = (selectedNode.Tag is IndexEntry indexEntry && qN7IsDeletableIndexEntry(indexEntry)) || selectedNode.Tag is ChunkData;
 			if (selectedNode.Tag is ChunkData)
 			{
 				CZVSh9rVYwo.Visible = true;
 				flag = true;
 			}
-			if (selectedNode.Tag is IndexEntry && ((IndexEntry)selectedNode.Tag).ParentName == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436))
+			if (selectedNode.Tag is IndexEntry indexEntry2 && indexEntry2.ParentName == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436))
 			{
 				RKaSmqyYTyO.Visible = true;
 				flag = true;
 			}
-			if ((selectedNode.Tag is IndexEntry && (((IndexEntry)selectedNode.Tag).ParentName == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436) || ((IndexEntry)selectedNode.Tag).FileName.ToLower() == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(92348))) || selectedNode.Tag is ChunkData)
+			if ((selectedNode.Tag is IndexEntry indexEntry3 && qN7IsDeletableIndexEntry(indexEntry3)) || selectedNode.Tag is ChunkData)
 			{
 				jFxSmvItyKV.Visible = true;
 				flag = true;
 			}
-			if (selectedNode.Tag is string && (string)selectedNode.Tag == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436))
+			if (selectedNode.Tag is IndexEntry indexEntry4 && qN7IsRenamableIndexEntry(indexEntry4))
+			{
+				qN7RenameMenuItem.Visible = true;
+				flag = true;
+			}
+			if (selectedNode.Tag is string tag && (tag == Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436) || tag == PeTreeTags.OpenStructureManager || tag == PeTreeTags.OpenTickingareaManager))
 			{
 				ueZSmXPhHf0.Visible = true;
 				flag = true;
 			}
-			g6XSmKWoPwS.Visible = true;
+			if (flag)
+			{
+				g6XSmKWoPwS.Visible = true;
+			}
 		}
 		P_1.Cancel = !flag;
 	}
@@ -4057,6 +4541,7 @@ public class MainForm : Form
 		peDataManagerForm.EntriesChanged += delegate(object sender, PeDataEntriesChangedEventArgs e)
 		{
 			qN7MarkImportedEntries(e.ImportedKeys);
+			qN7FocusImportedEntries(e.ImportedKeys);
 			fYSSs12pvYk();
 		};
 		peDataManagerForm.ShowDialog(this);
@@ -4078,9 +4563,89 @@ public class MainForm : Form
 		peDataManagerForm.EntriesChanged += delegate(object sender, PeDataEntriesChangedEventArgs e)
 		{
 			qN7MarkImportedEntries(e.ImportedKeys);
+			qN7FocusImportedEntries(e.ImportedKeys);
 			fYSSs12pvYk();
 		};
 		peDataManagerForm.ShowDialog(this);
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private void qN7FlushStagingEntriesForExport(IEnumerable<string> ldbKeys)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		if (ldbKeys == null)
+		{
+			return;
+		}
+		HashSet<string> hashSet = new HashSet<string>(ldbKeys, StringComparer.Ordinal);
+		if (FXqShwtcb7L?.Tag is IndexEntry indexEntry && hashSet.Contains(indexEntry.FileName))
+		{
+			if (tPRSmnjF0Jx.Controller.CheckModifications())
+			{
+				G5fSsR0fB3e(FXqShwtcb7L, FileStateType.MODIFIED);
+			}
+			tPRSmnjF0Jx.Controller.Save();
+		}
+		foreach (string item in hashSet)
+		{
+			if (KJySh48Y2Cp.TryGetValue(item, out ModifiedFile value) && value.FileNode != null)
+			{
+				value.FileNode.Save();
+			}
+		}
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private void qN7FocusImportedEntries(IEnumerable<string> ldbKeys)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		if (ldbKeys == null)
+		{
+			return;
+		}
+		foreach (string ldbKey in ldbKeys)
+		{
+			TreeNode treeNode = qN7FindTreeNodeByKey(CZCShKpUaJ9.Nodes, ldbKey);
+			if (treeNode != null)
+			{
+				CZCShKpUaJ9.SelectedNode = treeNode;
+				NmHSsMvVjT5(CZCShKpUaJ9);
+				break;
+			}
+		}
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private void qN7OpenFindLdbKey()
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
+		if (string.IsNullOrWhiteSpace(Working.T92StMGt1p4()))
+		{
+			MessageBox.Show(Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(93050), Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(91910));
+			return;
+		}
+		using FindLdbKeyEntry findLdbKeyEntry = new FindLdbKeyEntry(Working.T92StMGt1p4());
+		if (findLdbKeyEntry.ShowDialog(this) != DialogResult.OK || string.IsNullOrWhiteSpace(findLdbKeyEntry.SelectedLdbKey))
+		{
+			return;
+		}
+		TreeNode treeNode = qN7FindTreeNodeByKey(CZCShKpUaJ9.Nodes, findLdbKeyEntry.SelectedLdbKey);
+		if (treeNode != null)
+		{
+			CZCShKpUaJ9.SelectedNode = treeNode;
+			NmHSsMvVjT5(CZCShKpUaJ9);
+			return;
+		}
+		MessageBox.Show(this, "Key was found in staging but is not currently shown in the tree:\n" + findLdbKeyEntry.SelectedLdbKey, "Find LDB Key", MessageBoxButtons.OK, MessageBoxIcon.Information);
 	}
 
 	[MethodImpl(MethodImplOptions.NoInlining)]
@@ -4727,6 +5292,7 @@ public class MainForm : Form
 		RKaSmqyYTyO = new ToolStripMenuItem();
 		CZVSh9rVYwo = new ToolStripMenuItem();
 		g6XSmKWoPwS = new ToolStripSeparator();
+		qN7RenameMenuItem = new ToolStripMenuItem();
 		jFxSmvItyKV = new ToolStripMenuItem();
 		ueZSmXPhHf0 = new ToolStripMenuItem();
 		OijShm4rNck = new ImageList(PXpShixaZCM);
@@ -5136,7 +5702,7 @@ public class MainForm : Form
 		CZCShKpUaJ9.AfterSelect += sRXSseFvyEp;
 		CZCShKpUaJ9.KeyDown += fwXSq1cinTE;
 		CZCShKpUaJ9.MouseDown += YG8SqLmpHJ4;
-		kA5Sh8yt5Wm.Items.AddRange(new ToolStripItem[5] { RKaSmqyYTyO, CZVSh9rVYwo, g6XSmKWoPwS, jFxSmvItyKV, ueZSmXPhHf0 });
+		kA5Sh8yt5Wm.Items.AddRange(new ToolStripItem[6] { RKaSmqyYTyO, CZVSh9rVYwo, g6XSmKWoPwS, qN7RenameMenuItem, jFxSmvItyKV, ueZSmXPhHf0 });
 		kA5Sh8yt5Wm.Name = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(97300);
 		kA5Sh8yt5Wm.Size = new Size(143, 98);
 		kA5Sh8yt5Wm.Opening += x87Sq5sZxgl;
@@ -5151,6 +5717,10 @@ public class MainForm : Form
 		CZVSh9rVYwo.Click += NfTSqgxLWcO;
 		g6XSmKWoPwS.Name = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(97396);
 		g6XSmKWoPwS.Size = new Size(139, 6);
+		qN7RenameMenuItem.Name = "qN7RenameMenuItem";
+		qN7RenameMenuItem.Size = new Size(142, 22);
+		qN7RenameMenuItem.Text = "Rename";
+		qN7RenameMenuItem.Click += qN7RenameMenuClick;
 		jFxSmvItyKV.Name = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(97414);
 		jFxSmvItyKV.Size = new Size(142, 22);
 		jFxSmvItyKV.Text = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(10326);
@@ -5166,10 +5736,15 @@ public class MainForm : Form
 		OijShm4rNck.Images.SetKeyName(2, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(97510));
 		OijShm4rNck.Images.SetKeyName(3, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(97532));
 		OijShm4rNck.Images.SetKeyName(4, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(97564));
-		OijShm4rNck.Images.Add(Resources.Rc5SEEMbn5E());
-		OijShm4rNck.Images.SetKeyName(5, PeTreeTags.MapsNode);
-		qN7StructureButtons.SetButtonImage(OijShm4rNck.Images[0]);
-		qN7TickingareaButtons.SetButtonImage(OijShm4rNck.Images[0]);
+		if (OijShm4rNck.Images.Count <= TreeIconLoader.IconMaps)
+		{
+			OijShm4rNck.Images.Add(new Bitmap(OijShm4rNck.ImageSize.Width, OijShm4rNck.ImageSize.Height));
+		}
+		OijShm4rNck.Images.SetKeyName(TreeIconLoader.IconMaps, PeTreeTags.MapsNode);
+		TreeIconLoader.EnsureExtendedIconSlots(OijShm4rNck);
+		TreeIconLoader.ApplyCustomIcons(OijShm4rNck);
+		qN7StructureButtons.SetButtonImage(OijShm4rNck.Images[TreeIconLoader.IconStructures]);
+		qN7TickingareaButtons.SetButtonImage(OijShm4rNck.Images[TreeIconLoader.IconTickingareas]);
 		aKYShnYoo41.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 		aKYShnYoo41.FixedPanel = FixedPanel.Panel1;
 		aKYShnYoo41.Location = new Point(0, 23);
@@ -5239,8 +5814,8 @@ public class MainForm : Form
 		RSNSnTS7qqo.ImageTransparentColor = Color.Magenta;
 		RSNSnTS7qqo.Name = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(97618);
 		RSNSnTS7qqo.Size = new Size(23, 25);
-		RSNSnTS7qqo.Text = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(97642);
-		RSNSnTS7qqo.ToolTipText = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(29568);
+		RSNSnTS7qqo.Text = "Find Data";
+		RSNSnTS7qqo.ToolTipText = "Find Data";
 		RSNSnTS7qqo.Visible = false;
 		KK6Sh2a2ydc.DisplayStyle = ToolStripItemDisplayStyle.Image;
 		KK6Sh2a2ydc.Image = (Image)componentResourceManager.GetObject(Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(97686));
@@ -5285,8 +5860,8 @@ public class MainForm : Form
 		iIlShtmt9jE.ImageTransparentColor = Color.Magenta;
 		iIlShtmt9jE.Name = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(98200);
 		iIlShtmt9jE.Size = new Size(23, 25);
-		iIlShtmt9jE.Text = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(26620);
-		iIlShtmt9jE.ToolTipText = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(54488);
+		iIlShtmt9jE.Text = "Find Data";
+		iIlShtmt9jE.ToolTipText = "Find Data";
 		iIlShtmt9jE.Click += pORSqqSnJ8E;
 		kvpSmwvNc2S.Name = Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(98224);
 		kvpSmwvNc2S.Size = new Size(6, 28);

@@ -21,15 +21,24 @@ public class PEFileWorker
 	[MethodImpl(MethodImplOptions.NoInlining)]
 	public List<PEWorldFolder> LoadFileList()
 	{
+		return LoadFileList(Utils.GetGetMCPESaveFolder());
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	public List<PEWorldFolder> LoadFileList(string worldsRootPath)
+	{
 		while (false)
 		{
 			_ = ((object[])null)[0];
 		}
 		List<PEWorldFolder> list = new List<PEWorldFolder>();
-		string text = string.Empty;
+		string text = worldsRootPath ?? string.Empty;
 		try
 		{
-			text = Utils.GetGetMCPESaveFolder();
+			if (string.IsNullOrWhiteSpace(text) || !Directory.Exists(text))
+			{
+				return list;
+			}
 			string[] directories = Directory.GetDirectories(text);
 			if (directories != null)
 			{

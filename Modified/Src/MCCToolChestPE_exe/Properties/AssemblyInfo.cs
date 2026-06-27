@@ -17,6 +17,6 @@ using System.Security.Permissions;
 [assembly: AssemblyCopyright("Copyright © 2015-2020")]
 [assembly: Guid("42172754-288c-4245-ac47-981c7f2f5bce")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.1")]
 [assembly: ComVisible(false)]
-[assembly: AssemblyVersion("0.1.1.7")]
+[assembly: AssemblyVersion("1.0.0.1")]
