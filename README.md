@@ -22,8 +22,10 @@ The "Modified" folder will contain a modified version rather than the original o
 1. The primary goal is support for modern world formats, which is currently absent.
 2. There is a well-known issue with the world map viewer: if your world is too large, the application becomes extremely slow and may take a very long time to process and generate the world map. It appears that the application attempts to render the entire world map at once instead of generating it incrementally, which could prevent freezes lasting tens of minutes and reduce excessive RAM usage.
 3. The existing map art tool is not sufficiently optimized and lacks some useful functionality. It could potentially be improved to reach a feature set similar to Tryashtar's Image Map.
+
 ~~4. Data stored under LevelDB keys such as "structuretemplate_..." or "structuretemplate_mystructure:..." and "tickingarea_..." is not displayed in the data list and does not have a dedicated category. These entries contain structures saved within the world and created using Structure Blocks.~~
 It has been implemented.
+
 ~~5. Bedrock Edition worlds containing more than three dimensions trigger an "out of range..." error when opened in MCCToolChestPE and therefore cannot be edited. This primarily affects worlds created in leaked NetEase development builds, as those versions allow the use of the "/changedimension" command to travel to dimensions with an index greater than 2 (Overworld = 0, Nether = 1, The End = 2). All additional dimensions use Overworld-style terrain generation unless special add-ons are used to modify it. This issue should be fixed.~~
 It has been implemented.
 
