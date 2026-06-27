@@ -5,3 +5,11 @@ c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\o
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\ARM\Release\net45\FastColoredTextBox.csproj.CoreCompileInputs.cache
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\ARM\Release\net45\FastColoredTextBox.dll
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\FastColoredTextBox\obj\ARM\Release\net45\FastColoredTextBox.pdb
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\FastColoredTextBox\bin\ARM\Release\net45\FastColoredTextBox.dll
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\FastColoredTextBox\bin\ARM\Release\net45\FastColoredTextBox.pdb
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\FastColoredTextBox\obj\ARM\Release\net45\FastColoredTextBox.csproj.AssemblyReference.cache
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\FastColoredTextBox\obj\ARM\Release\net45\FastColoredTextBox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\FastColoredTextBox\obj\ARM\Release\net45\FastColoredTextBox.csproj.CoreCompileInputs.cache
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\FastColoredTextBox\obj\ARM\Release\net45\FastColoredTextBox.sourcelink.json
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\FastColoredTextBox\obj\ARM\Release\net45\FastColoredTextBox.dll
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\FastColoredTextBox\obj\ARM\Release\net45\FastColoredTextBox.pdb

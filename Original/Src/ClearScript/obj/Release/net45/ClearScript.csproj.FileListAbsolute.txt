@@ -5,3 +5,11 @@ c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\obj\Rele
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\obj\Release\net45\ClearScript.csproj.CoreCompileInputs.cache
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\obj\Release\net45\ClearScript.dll
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\ClearScript\obj\Release\net45\ClearScript.pdb
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\ClearScript\bin\Release\net45\ClearScript.dll
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\ClearScript\bin\Release\net45\ClearScript.pdb
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\ClearScript\obj\Release\net45\ClearScript.csproj.AssemblyReference.cache
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\ClearScript\obj\Release\net45\ClearScript.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\ClearScript\obj\Release\net45\ClearScript.csproj.CoreCompileInputs.cache
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\ClearScript\obj\Release\net45\ClearScript.sourcelink.json
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\ClearScript\obj\Release\net45\ClearScript.dll
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\ClearScript\obj\Release\net45\ClearScript.pdb

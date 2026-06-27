@@ -8,3 +8,14 @@ c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\Release
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\Release\net20\NBTModel.csproj.Up2Date
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\Release\net20\NBTModel.dll
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NBTModel\obj\Release\net20\NBTModel.pdb
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\bin\Release\net20\NBTModel.dll
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\bin\Release\net20\NBTModel.pdb
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\bin\Release\net20\Substrate.dll
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\bin\Release\net20\Substrate.pdb
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\obj\Release\net20\NBTModel.csproj.AssemblyReference.cache
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\obj\Release\net20\NBTModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\obj\Release\net20\NBTModel.csproj.CoreCompileInputs.cache
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\obj\Release\net20\NBTModel.sourcelink.json
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\obj\Release\net20\NBTModel.csproj.Up2Date
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\obj\Release\net20\NBTModel.dll
+C:\Users\Max\Documents\GitHub\MCCToolChestPE\Original\Src\NBTModel\obj\Release\net20\NBTModel.pdb
