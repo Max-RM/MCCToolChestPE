@@ -2720,6 +2720,15 @@ public class MainForm : Form
 	[MethodImpl(MethodImplOptions.NoInlining)]
 	private bool qN7IsRenamableIndexEntry(IndexEntry indexEntry)
 	{
+		if (indexEntry == null)
+		{
+			return false;
+		}
+		if (string.Equals(indexEntry.FileName, PeTreeTags.PortalsKey, StringComparison.OrdinalIgnoreCase)
+			|| string.Equals(indexEntry.ParentName, PeTreeTags.PortalsFolder, StringComparison.OrdinalIgnoreCase))
+		{
+			return false;
+		}
 		return qN7IsDeletableIndexEntry(indexEntry);
 	}
 

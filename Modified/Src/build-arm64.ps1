@@ -37,10 +37,33 @@ if ($missing) {
 }
 
 $sln = Join-Path $root "Src\MCCToolChestPE.sln"
-& $msbuild $sln /p:Configuration=Release /p:Platform=ARM64 /v:minimal
+& $msbuild $sln /t:Rebuild /p:Configuration=Release /p:Platform=ARM64 /v:minimal
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-$outDir = Join-Path $exeProject "bin\ARM64\Release\net45"
+$outDir = Join-Path $exeProject "bin\ARM64\Release\net472"
+$managedDlls = @(
+    "NBTExplorerWrapper.dll",
+    "Substrate.dll",
+    "NBTModel.dll",
+    "ClearScript.dll",
+    "FastColoredTextBox.dll",
+    "NAppUpdate.Framework.dll"
+)
+foreach ($dll in $managedDlls) {
+    $path = Join-Path $outDir $dll
+    if (-not (Test-Path $path)) {
+        Write-Error "ARM64 build output missing $dll"
+        exit 1
+    }
+    $bytes = [System.IO.File]::ReadAllBytes($path)
+    $peOffset = [BitConverter]::ToInt32($bytes, 0x3C)
+    $machine = [BitConverter]::ToUInt16($bytes, $peOffset + 4)
+    if ($machine -ne 0xAA64) {
+        Write-Error "ARM64 build produced wrong architecture for ${dll}: expected ARM64 (0xAA64), got 0x{0:X4}. Run build-arm64.ps1 after x64 builds, or delete bin/obj under Src." -f $machine
+        exit 1
+    }
+}
+
 Write-Host ""
 Write-Host "ARM64 build succeeded."
 Write-Host "Output: $outDir\MCCToolChestPE.exe"

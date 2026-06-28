@@ -11,6 +11,12 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+  </PropertyGroup>
   <PropertyGroup>
     <RootNamespace />
   </PropertyGroup>

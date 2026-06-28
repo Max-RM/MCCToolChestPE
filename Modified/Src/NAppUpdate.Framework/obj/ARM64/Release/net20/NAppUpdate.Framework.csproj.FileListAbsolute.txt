@@ -7,3 +7,12 @@ c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.csproj.CoreCompileInputs.cache
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.dll
 c:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.pdb
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NAppUpdate.Framework\bin\ARM64\Release\net20\NAppUpdate.Framework.dll
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NAppUpdate.Framework\bin\ARM64\Release\net20\NAppUpdate.Framework.pdb
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.csproj.AssemblyReference.cache
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.Resources.resources
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.csproj.GenerateResource.cache
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.csproj.CoreCompileInputs.cache
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.dll
+C:\Users\Max\Desktop\M\Projects\ReMCCTPE\MCCToolChestPE\Modified\Src\NAppUpdate.Framework\obj\ARM64\Release\net20\NAppUpdate.Framework.pdb

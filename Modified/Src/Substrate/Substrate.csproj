@@ -9,6 +9,12 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+  </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup />
