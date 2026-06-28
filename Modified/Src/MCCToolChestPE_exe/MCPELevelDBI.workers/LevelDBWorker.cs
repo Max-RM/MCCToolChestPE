@@ -624,14 +624,40 @@ public class LevelDBWorker
 	}
 
 	[MethodImpl(MethodImplOptions.NoInlining)]
+	private IEnumerable<byte[]> EnumerateBedrockChunkKeys()
+	{
+		IntPtr options = LevelDBInterop.leveldb_readoptions_create();
+		LevelDBInterop.leveldb_readoptions_set_fill_cache(options, 0);
+		try
+		{
+			using (Iterator iterator = CreateIterator(options))
+			{
+				iterator.SeekToFirst();
+				while (iterator.IsValid())
+				{
+					byte[] key = iterator.Key();
+					if (TryParseBedrockChunkKey(key, out _, out _, out _, out _))
+					{
+						yield return key;
+					}
+					iterator.Next();
+				}
+			}
+		}
+		finally
+		{
+			LevelDBInterop.leveldb_readoptions_destroy(options);
+		}
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
 	public List<PEDimension> GetAvailableChunks()
 	{
 		while (false)
 		{
 			_ = ((object[])null)[0];
 		}
-		List<DBRecord> list = JqiSMVeC9C5(readOptions);
-		return QviSMKHrybW(list);
+		return QviSMKHrybWFromKeys(EnumerateBedrockChunkKeys());
 	}
 
 	[MethodImpl(MethodImplOptions.NoInlining)]
@@ -831,13 +857,22 @@ public class LevelDBWorker
 		{
 			_ = ((object[])null)[0];
 		}
+		return QviSMKHrybWFromKeys(P_0.Select((DBRecord record) => record.Key));
+	}
+
+	[MethodImpl(MethodImplOptions.NoInlining)]
+	private List<PEDimension> QviSMKHrybWFromKeys(IEnumerable<byte[]> chunkKeys)
+	{
+		while (false)
+		{
+			_ = ((object[])null)[0];
+		}
 		List<PEDimension> list = new List<PEDimension>();
 		list.Add(new PEDimension(0));
 		list.Add(new PEDimension(1));
 		list.Add(new PEDimension(2));
-		foreach (DBRecord item in P_0)
+		foreach (byte[] key in chunkKeys)
 		{
-			byte[] key = item.Key;
 			if (!TryParseBedrockChunkKey(key, out int dimension, out int num, out int num2, out _))
 			{
 				continue;

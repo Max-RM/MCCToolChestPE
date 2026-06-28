@@ -65,7 +65,7 @@ public static class PeLdbDataHelper
 		Array.Sort(files, StringComparer.OrdinalIgnoreCase);
 		foreach (string text in files)
 		{
-			AddEntryFromFile(list, text, kind);
+			AddEntryFromFile(list, text, kind, worldStagingPath);
 		}
 		return list;
 	}
@@ -244,6 +244,7 @@ public static class PeLdbDataHelper
 		foreach (var item2 in list)
 		{
 			string text3 = FileUtils.EncodeLdbKeyFileName(item2.key) + PeStagingPaths.DataFileExtension;
+			FileUtils.RegisterStagingFileName(worldStagingPath, Path.GetFileNameWithoutExtension(text3), item2.key);
 			string text4 = PeStagingPaths.BuildDataAbsolutePath(worldStagingPath, text3);
 			File.Copy(item2.file, text4, overwrite: true);
 			RemoveTreeEntriesByKey(treeView, item2.key);
@@ -264,6 +265,7 @@ public static class PeLdbDataHelper
 			pEFileTree.DisplayFileItem(indexEntry2, worldStagingPath, treeView, displayName);
 			list3.Add(item2.key);
 		}
+		LdbKeyStagingIndex.Save(worldStagingPath);
 		Working.DataChanged = true;
 		return list3;
 	}
@@ -274,6 +276,7 @@ public static class PeLdbDataHelper
 		string text = ResolveNewEntryKey(kind, circleTickingarea, structureNamespacePrefix, structureName, ldbKeyOverride, worldStagingPath, treeView);
 		Directory.CreateDirectory(PeStagingPaths.GetDataFolderPath(worldStagingPath));
 		string text2 = FileUtils.EncodeLdbKeyFileName(text) + PeStagingPaths.DataFileExtension;
+		FileUtils.RegisterStagingFileName(worldStagingPath, Path.GetFileNameWithoutExtension(text2), text);
 		string text3 = PeStagingPaths.BuildDataAbsolutePath(worldStagingPath, text2);
 		int num = 0;
 		while (File.Exists(text3) || KeyExistsInTree(treeView, text))
@@ -281,6 +284,7 @@ public static class PeLdbDataHelper
 			num++;
 			text = ((kind == PeManagedDataKind.Structure) ? ResolveStructureManualKey(PeTreeTags.StructureTemplatePrefix + structureNamespacePrefix + ":new_structure" + ((num == 1) ? "_1" : ("_" + num)), structureNamespacePrefix, worldStagingPath, treeView) : ResolveTickingareaManualKey(PeTreeTags.TickingareaPrefix + "new_tickingarea" + ((num == 1) ? "" : ("_" + num)), worldStagingPath, treeView));
 			text2 = FileUtils.EncodeLdbKeyFileName(text) + PeStagingPaths.DataFileExtension;
+			FileUtils.RegisterStagingFileName(worldStagingPath, Path.GetFileNameWithoutExtension(text2), text);
 			text3 = PeStagingPaths.BuildDataAbsolutePath(worldStagingPath, text2);
 		}
 		FileUtils.WriteFile(bytes, text3);
@@ -301,6 +305,7 @@ public static class PeLdbDataHelper
 			ParentName = dedicatedParent
 		};
 		pEFileTree.DisplayFileItem(indexEntry2, worldStagingPath, treeView, displayName);
+		LdbKeyStagingIndex.Save(worldStagingPath);
 		Working.DataChanged = true;
 		return new List<string> { text };
 	}
@@ -406,6 +411,8 @@ public static class PeLdbDataHelper
 			item2.Remove();
 		}
 		File.Move(oldAbsolutePath, newAbsolutePath);
+		FileUtils.RegisterStagingFileName(worldStagingPath, Path.GetFileNameWithoutExtension(newFileNameOnDisk), newKey);
+		LdbKeyStagingIndex.Save(worldStagingPath);
 		string newRelativePath = PeStagingPaths.BuildDataRelativePath(newFileNameOnDisk);
 		string displayName = BuildDisplayName(newKey, kind, newAbsolutePath);
 		PEFileTree pEFileTree = new PEFileTree();
@@ -535,9 +542,10 @@ public static class PeLdbDataHelper
 		return list.Count > 0;
 	}
 
-	private static void AddEntryFromFile(List<PeManagedDataEntry> list, string absolutePath, PeManagedDataKind kind)
+	private static void AddEntryFromFile(List<PeManagedDataEntry> list, string absolutePath, PeManagedDataKind kind, string worldStagingPath)
 	{
-		string ldbKey = FileUtils.DecodeLdbKeyFileName(Path.GetFileNameWithoutExtension(absolutePath));
+		string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(absolutePath);
+		string ldbKey = FileUtils.DecodeLdbKeyFileName(fileNameWithoutExtension, worldStagingPath);
 		list.Add(new PeManagedDataEntry
 		{
 			LdbKey = ldbKey,

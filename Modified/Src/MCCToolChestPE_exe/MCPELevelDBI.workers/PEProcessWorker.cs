@@ -121,6 +121,7 @@ public class PEProcessWorker
 			}
 			try
 			{
+				LdbKeyStagingIndex.ClearCache(folderPath);
 				WriteWildCardRecords(folderPath, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(87116), Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(28436));
 				WriteWildCardRecords(folderPath, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(87132), Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206));
 				WriteWildCardRecords(folderPath, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(87152), Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206));
@@ -132,6 +133,7 @@ public class PEProcessWorker
 					"SST_WORD",
 					"SST_WORD_"
 				}, Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(55206));
+				LdbKeyStagingIndex.Save(folderPath);
 			}
 			catch (Exception ex6)
 			{
@@ -194,6 +196,7 @@ public class PEProcessWorker
 		{
 			string text = FileUtils.LdbKeyFromBytes(item.Key);
 			string path2 = FileUtils.EncodeLdbKeyFileName(text);
+			FileUtils.RegisterStagingFileName(path, path2, text);
 			string filename = Path.Combine(path, folder, path2 + Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(22554));
 			FileUtils.WriteFile(item.Value, filename);
 		}
@@ -218,6 +221,7 @@ public class PEProcessWorker
 			if (array != null && array.Length > 0)
 			{
 				string path2 = FileUtils.EncodeLdbKeyFileName(key);
+				FileUtils.RegisterStagingFileName(path, path2, key);
 				string filename = Path.Combine(path, folder, path2 + Ne4dSgXrbYTX6VcmT1p.mqbSrBrZa1U(22554));
 				FileUtils.WriteFile(array, filename);
 			}

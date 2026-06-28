@@ -122,7 +122,7 @@ public class FindLdbKeyEntry : Form
 			string[] files = Directory.GetFiles(dataFolder, "*" + PeStagingPaths.DataFileExtension);
 			foreach (string path in files)
 			{
-				string item = FileUtils.DecodeLdbKeyFileName(Path.GetFileNameWithoutExtension(path));
+				string item = FileUtils.DecodeLdbKeyFileName(Path.GetFileNameWithoutExtension(path), _stagingRoot);
 				hashSet.Add(item);
 			}
 		}

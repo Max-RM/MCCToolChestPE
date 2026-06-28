@@ -5743,8 +5743,10 @@ public class MainForm : Form
 		OijShm4rNck.Images.SetKeyName(TreeIconLoader.IconMaps, PeTreeTags.MapsNode);
 		TreeIconLoader.EnsureExtendedIconSlots(OijShm4rNck);
 		TreeIconLoader.ApplyCustomIcons(OijShm4rNck);
-		qN7StructureButtons.SetButtonImage(OijShm4rNck.Images[TreeIconLoader.IconStructures]);
-		qN7TickingareaButtons.SetButtonImage(OijShm4rNck.Images[TreeIconLoader.IconTickingareas]);
+		Image structureManagerIcon = TreeIconLoader.LoadManagerButtonImage("tree_structure_manager.png") ?? OijShm4rNck.Images[TreeIconLoader.IconStructures];
+		Image tickingManagerIcon = TreeIconLoader.LoadManagerButtonImage("tree_tickingarea_manager.png") ?? OijShm4rNck.Images[TreeIconLoader.IconTickingareas];
+		qN7StructureButtons.SetButtonImage(structureManagerIcon);
+		qN7TickingareaButtons.SetButtonImage(tickingManagerIcon);
 		aKYShnYoo41.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 		aKYShnYoo41.FixedPanel = FixedPanel.Panel1;
 		aKYShnYoo41.Location = new Point(0, 23);

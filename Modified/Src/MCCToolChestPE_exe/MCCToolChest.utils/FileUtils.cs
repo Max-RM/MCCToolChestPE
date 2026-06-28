@@ -2,6 +2,7 @@ using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
@@ -160,8 +161,29 @@ public class FileUtils
 		{
 			_ = ((object[])null)[0];
 		}
-		using BinaryWriter binaryWriter = new BinaryWriter(File.Open(filename, FileMode.Create));
+		string path = ToExtendedPathIfNeeded(filename);
+		using BinaryWriter binaryWriter = new BinaryWriter(File.Open(path, FileMode.Create));
 		binaryWriter.Write(bytes);
+	}
+
+	public const int MaxStagingFileNameLength = 180;
+
+	public static string ToExtendedPathIfNeeded(string path)
+	{
+		if (string.IsNullOrWhiteSpace(path) || path.StartsWith(@"\\?\", StringComparison.Ordinal))
+		{
+			return path;
+		}
+		string fullPath = Path.GetFullPath(path);
+		if (fullPath.Length < 240)
+		{
+			return fullPath;
+		}
+		if (fullPath.StartsWith(@"\\", StringComparison.Ordinal))
+		{
+			return @"\\?\UNC\" + fullPath.Substring(2);
+		}
+		return @"\\?\" + fullPath;
 	}
 
 	[MethodImpl(MethodImplOptions.NoInlining)]
@@ -453,14 +475,58 @@ public class FileUtils
 				stringBuilder.Append(c);
 			}
 		}
-		return stringBuilder.ToString();
+		string text = stringBuilder.ToString();
+		if (text.Length <= MaxStagingFileNameLength)
+		{
+			return text;
+		}
+		return BuildShortHashedFileName(ldbKey);
+	}
+
+	public static string BuildShortHashedFileName(string ldbKey)
+	{
+		using SHA256 sHA = SHA256.Create();
+		byte[] array = sHA.ComputeHash(Encoding.UTF8.GetBytes(ldbKey));
+		StringBuilder stringBuilder = new StringBuilder(32);
+		for (int i = 0; i < 16; i++)
+		{
+			stringBuilder.Append(array[i].ToString("x2", CultureInfo.InvariantCulture));
+		}
+		return GetLdbKeyFilePrefix(ldbKey) + "~" + stringBuilder;
+	}
+
+	private static string GetLdbKeyFilePrefix(string ldbKey)
+	{
+		string[] array = new string[4] { "structuretemplate_", "tickingarea_", "map_", "VILLAGE_" };
+		foreach (string text in array)
+		{
+			if (ldbKey.StartsWith(text, StringComparison.OrdinalIgnoreCase))
+			{
+				return text;
+			}
+		}
+		return "ldb_";
+	}
+
+	public static void RegisterStagingFileName(string stagingRoot, string fileNameWithoutExtension, string ldbKey)
+	{
+		LdbKeyStagingIndex.Register(stagingRoot, fileNameWithoutExtension, ldbKey);
 	}
 
 	public static string DecodeLdbKeyFileName(string encoded)
 	{
+		return DecodeLdbKeyFileName(encoded, null);
+	}
+
+	public static string DecodeLdbKeyFileName(string encoded, string stagingRoot)
+	{
 		if (string.IsNullOrEmpty(encoded))
 		{
 			return encoded;
+		}
+		if (LdbKeyStagingIndex.IsHashedStagingFileName(encoded) && !string.IsNullOrWhiteSpace(stagingRoot) && LdbKeyStagingIndex.TryGetLdbKey(stagingRoot, encoded, out string ldbKey))
+		{
+			return ldbKey;
 		}
 		StringBuilder stringBuilder = new StringBuilder(encoded.Length);
 		for (int i = 0; i < encoded.Length; i++)

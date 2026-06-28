@@ -57,7 +57,7 @@ public class PeDataButtonsFrame : UserControl
 		_editorButton = new Button();
 		SuspendLayout();
 		_editorButton.BackColor = Color.LightGray;
-		_editorButton.BackgroundImageLayout = ImageLayout.Zoom;
+		_editorButton.BackgroundImageLayout = ImageLayout.Center;
 		_editorButton.FlatStyle = FlatStyle.Popup;
 		_editorButton.Location = new Point(4, 26);
 		_editorButton.Name = "editorButton";
@@ -77,5 +77,6 @@ public class PeDataButtonsFrame : UserControl
 	public void SetButtonImage(Image image)
 	{
 		_editorButton.BackgroundImage = image;
+		_editorButton.BackgroundImageLayout = ImageLayout.Center;
 	}
 }

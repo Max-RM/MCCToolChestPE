@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Windows.Forms;
 
@@ -70,6 +71,36 @@ public static class TreeIconLoader
 			catch (Exception)
 			{
 			}
+		}
+	}
+
+	public static Image LoadManagerButtonImage(string iconFileName, int size = 64)
+	{
+		string path = Path.Combine(GetIconsFolder(), iconFileName);
+		if (!File.Exists(path))
+		{
+			return null;
+		}
+		try
+		{
+			using Bitmap bitmap = new Bitmap(path);
+			if (bitmap.Width == size && bitmap.Height == size)
+			{
+				return new Bitmap(bitmap);
+			}
+			Bitmap bitmap2 = new Bitmap(size, size);
+			using (Graphics graphics = Graphics.FromImage(bitmap2))
+			{
+				graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+				graphics.SmoothingMode = SmoothingMode.HighQuality;
+				graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+				graphics.DrawImage(bitmap, 0, 0, size, size);
+			}
+			return bitmap2;
+		}
+		catch (Exception)
+		{
+			return null;
 		}
 	}
 

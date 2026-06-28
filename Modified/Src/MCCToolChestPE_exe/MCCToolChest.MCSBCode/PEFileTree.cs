@@ -141,7 +141,7 @@ public class PEFileTree
 		foreach (string path2 in array)
 		{
 			string fileNameOnDisk = Path.GetFileName(path2);
-			string ldbKey = FileUtils.DecodeLdbKeyFileName(Path.GetFileNameWithoutExtension(fileNameOnDisk));
+			string ldbKey = FileUtils.DecodeLdbKeyFileName(Path.GetFileNameWithoutExtension(fileNameOnDisk), P_0);
 			string displayName = FormatPrefixedDataDisplayName(ldbKey, prefix, path2);
 			IndexEntry indexEntry = new IndexEntry();
 			indexEntry.FileName = ldbKey;
@@ -196,7 +196,7 @@ public class PEFileTree
 		string[] array = files;
 		foreach (string path2 in array)
 		{
-			string text = FileUtils.DecodeLdbKeyFileName(Path.GetFileNameWithoutExtension(path2));
+			string text = FileUtils.DecodeLdbKeyFileName(Path.GetFileNameWithoutExtension(path2), P_0);
 			if (text.StartsWith(PeTreeTags.StructureTemplatePrefix, StringComparison.OrdinalIgnoreCase))
 			{
 				list.Add(path2);
@@ -225,7 +225,7 @@ public class PEFileTree
 		list5.AddRange(list4);
 		foreach (string path3 in list5)
 		{
-			string text2 = FileUtils.DecodeLdbKeyFileName(Path.GetFileNameWithoutExtension(path3));
+			string text2 = FileUtils.DecodeLdbKeyFileName(Path.GetFileNameWithoutExtension(path3), P_0);
 			IndexEntry indexEntry = new IndexEntry();
 			indexEntry.FileName = text2;
 			indexEntry.FilePath = PeStagingPaths.BuildDataRelativePath(Path.GetFileName(path3));
